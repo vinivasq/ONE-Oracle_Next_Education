@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meu primeiro Teste! (na Alura...)</h1>
+    <p>
+        Seria isso um programa?
+        Descubra acessando a <a href="http://www.alura.com.br" target="_blank" rel="external" >Alura</a>
+    </p>
+
+    <script>
+        function pulaLinha()
+        {
+            document.write("<br>");
+        }
+
+        function escreve(sentenca)
+        {
+            document.write(sentenca);
+        }
+
+        var ano = 2022; 
+        var mediaIdades = (39 + 20 + 41) / 3;
+        
+        // ler sobre concatenação com + ou , nos links compartilhados no discord
+        alert("Isso sim é um programa!");
+        document.write("<p> Desta forma, estou escrevendo um texto no HTML através de JS.</p>")
+        document.write("<p> Assim, posso tornar textos mais dinamicos, por exemplo realizar operaçoes matemáticas, concatenar textos ou incluir variaveis. E também usar tags.</p>")
+        
+        pulaLinha();
+        
+        escreve("<p> Um exemplo de soma seria: " + "18 + 20 = " + (18 + 20) + "</p>");
+        escreve("<p> A média arredondada da idades 39, 20 e 41 é: ", Math.round(mediaIdades) + "</p>");
+        escreve("<p> Vinícius terá " + (ano - 2001) + " anos em " + ano + ". </p>");
+        
+        ano = 2040
+        
+        escreve("<p> E em " + ano + " Vinícius terá: " + (ano - 2001) + " anos. </p>");
+
+    </script>
+</body>
+</html>
