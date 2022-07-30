@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cálculo de IMC</title>
 </head>
 <body>
     <script>
@@ -19,19 +19,18 @@
             pulaLinha();
         }
 
-        function calculaIMC (altura, peso)
+        function calculaIMC (alturaInformada, pesoInformado)
         {
-            var imc = peso / (altura * altura);
-            return Math.round(imc);
+            return Math.round(pesoInformado / (alturaInformada * alturaInformada));
         }
 
-       let imcFlavio = calculaIMC(1.83, 81);
-       let imcAmigo = calculaIMC(1.86, 110);
+        let nome = prompt("Informe o seu nome");
+        let alturaInformada = prompt(nome + ", informe a sua altura."); 
+        let pesoInformado =  prompt(nome + ", informe o seu peso.");
+        let imcCalculado = calculaIMC(alturaInformada, pesoInformado);
         
-       mostra ("O índice IMC de Flávio é: " + imcFlavio);
-       mostra ("O íncice IMG de Amigo é: " + imcAmigo);
-        
-        
+        mostra("O índice IMC de " + nome + " é: " + imcCalculado);
+
     </script>
 </body>
 </html>
