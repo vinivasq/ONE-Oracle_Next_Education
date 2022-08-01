@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do mundo</title>
+</head>
+<body>
+    <header>
+        <h1>Quando teve copa?</h1>
+        <p>O programa a seguir calculará em quais anos houve copa do mundo, dentro do limite estabelecido pelo usuário.</p>
+    </header>
+
+    <script>
+        function pulaLinha()
+        {
+            document.write("<br>");
+        }
+
+        function mostra(frase)
+        {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        let limite = parseInt(prompt("Digite um ano limite."));
+        let anoCopa = 1930;
+        
+        while (anoCopa <= limite) 
+        {
+            mostra("Teve copa em: " + anoCopa);
+            anoCopa = anoCopa + 4;
+        }
+
+       /* desafio de aula para exibir numeros de 30 a 40 pulando os numeros 33 e 3
+       let numero = 30;
+       
+       while (numero <= 40) 
+       {
+           if (numero != 33 && numero != 37) {
+               mostra(numero);                   
+           }
+           numero = numero + 1;
+       }
+       
+       mostra("FIM");
+       */
+    </script>
+</body>
+</html>

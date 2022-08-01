@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio com login</title>
+</head>
+<body>
+    <script>
+        function mostra(frase)
+        {
+            document.write(frase);
+            document.write("<br>");
+        }
+
+        let login = "aluno";
+        let senha = "aluno123";
+        let tentativas = 3;
+        let tentativaAtual = 1;
+
+        while(tentativas >= tentativaAtual)
+        {
+            let loginInformado = prompt("Digite seu login: ");
+            let senhaInformada = prompt("Digite a sua senha: ");
+
+            if (login == loginInformado && senha == senhaInformada) 
+            {
+                alert("Sucesso, acessando sua conta...");
+                tentativaAtual = tentativas;
+            }
+
+            else if (tentativaAtual == 3) {
+                alert("conta bloqueada");
+            }
+
+            else 
+            {
+                alert("Credenciais não cadastradas. Você tem mais " + (tentativas - tentativaAtual) + " tentativas.");
+            }
+            tentativaAtual ++;
+        }
+
+    </script>
+</body>
+</html>
