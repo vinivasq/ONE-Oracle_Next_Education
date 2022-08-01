@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input/>
+    <button>Compare com o número chave</button>
+    
+    <script>
+        function mostra(frase)
+        {
+            document.write(frase);
+            document.write("<br>");
+        }
+        
+        function verifica ()
+        {
+            if (numChave == numChute.value)
+            {
+                alert("Você acertou!!");
+            }
+            else
+            {
+                alert("Você errou!!");
+            }
+            numChute.value = "";
+            numChute.focus();
+        }
+
+        let numChave = Math.round(Math.random() * 10);
+        let numChute = document.querySelector("input");
+        let button = document.querySelector("button");
+        
+        numChute.focus();        
+        console.log(numChave);
+        button.onclick = verifica;
+    </script>
+</body>
+</html>
