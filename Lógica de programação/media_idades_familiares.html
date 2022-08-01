@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media das idades</title>
+</head>
+<body>
+    <script>
+        function mostra(frase)
+        {
+            document.write(frase);
+            document.write("<br>");
+        }
+
+        let totalIntegrantes = parseInt(prompt("Informe a quantidade de integrantes que você gostaria de calcular a média das idades."));
+        let totalIdades = 0;
+
+        for (let index = 1; index <= totalIntegrantes; index++) 
+        {
+            let idade = parseInt(prompt("Informe a idade"));
+            totalIdades = totalIdades + idade;
+            
+        }
+
+        let mediaIdades = totalIdades / totalIntegrantes
+        mostra("A média das idades informadas é: " + mediaIdades);
+
+    </script>
+</body>
+</html>
