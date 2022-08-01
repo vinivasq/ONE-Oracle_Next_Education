@@ -27,9 +27,43 @@
         let nome = prompt("Informe o seu nome");
         let alturaInformada = prompt(nome + ", informe a sua altura."); 
         let pesoInformado =  prompt(nome + ", informe o seu peso.");
-        let imcCalculado = calculaIMC(alturaInformada, pesoInformado);
+        let imc = calculaIMC(alturaInformada, pesoInformado);
         
-        mostra("O índice IMC de " + nome + " é: " + imcCalculado);
+        mostra("O índice IMC de " + nome + " é: " + imc);
+
+        if (imc <= 18.5) {
+            mostra("Seu índice IMC está abaixo do recomendado.");
+        }
+        
+        else if (imc >= 35)
+        {
+            mostra("Seu índice IMC está acima do recomendado.");
+        }
+
+        else 
+        {
+            mostra("Seu índice IMC está dentro dos parâmetros recomendados pela OMS.");
+        }
+
+        // outra forma de representar este condicionamento é utilizando os principios de operações lógicas. por exemplo
+
+        /*
+        if (imc <= 18.5) {
+            mostra("Seu índice IMC está abaixo do recomendado.");
+        }
+        
+        if (imc >= 35)
+        {
+            mostra("Seu índice IMC está acima do recomendado.");
+        }
+
+                        AND         
+        if (imc <= 18.5 && imc >= 35) 
+        {
+            mostra("Seu índice IMC está dentro dos parâmetros recomendados pela OMS.")
+        }
+        */
+ 
 
     </script>
 </body>
