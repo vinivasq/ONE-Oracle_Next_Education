@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Acerte o segredo</title>
 </head>
 <body>
+    
+    <h3>Digite um número de 1 a 10</h3>
     <input/>
     <button>Compare com o número chave</button>
     
@@ -17,26 +19,74 @@
             document.write("<br>");
         }
         
+        let button = document.querySelector("button");
+        
+        function sorteia()
+        {
+            return Math.round(Math.random() * 10);
+        }
+        
+        function sorteiaNumeros (quantidade) 
+        {
+            let segredos = [];
+            let achou = false;
+            let numero = 1; 
+            
+            while (numero <= quantidade) 
+            {
+                let numeroAleatorio = sorteia();
+                
+                if (numeroAleatorio !== 0) 
+                {
+                    let achou = false;
+                    
+                    for (let posicao = 0; posicao < segredos.length; posicao++) 
+                    {
+                        if (segredos[posicao] == numeroAleatorio) 
+                        {
+                            achou = true;
+                            break;
+                        }
+                    }
+                    
+                    if (achou == false) 
+                    {
+                        segredos.push(numeroAleatorio);
+                        numero++
+                    }
+                }   
+            }
+            return segredos;
+        }
+        
+        let segredos = sorteiaNumeros(5);
+        console.log(segredos);
+        let numChute = document.querySelector("input");
+        numChute.focus();        
+    
         function verifica ()
         {
-            if (numChave == numChute.value)
+            let achou = false;
+            
+            for (let posicao = 0; posicao < segredos.length; posicao++) 
             {
-                alert("Você acertou!!");
+                if (segredos[posicao] == numChute.value)
+                {
+                    alert("Você acertou!!");
+                    achou = true;
+                    break;
+                }
+                
             }
-            else
+            if (achou == false) 
             {
-                alert("Você errou!!");
+                alert("Você errou!!");    
             }
+            
             numChute.value = "";
             numChute.focus();
         }
 
-        let numChave = Math.round(Math.random() * 10);
-        let numChute = document.querySelector("input");
-        let button = document.querySelector("button");
-        
-        numChute.focus();        
-        console.log(numChave);
         button.onclick = verifica;
     </script>
 </body>
