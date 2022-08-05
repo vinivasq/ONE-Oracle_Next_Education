@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de barras</title>
+</head>
+<body>
+    <canvas width="600" height="400"></canvas> 
+    
+    <script>
+        function desenhaRetangulo(x, y, altura, cor)
+        {
+            let tela = document.querySelector('canvas');
+            let pincel = tela.getContext('2d');
+            
+            pincel.fillStyle = cor;
+            pincel.fillRect(x, y, 40, altura);
+            pincel.strokeStyle = 'black';
+            pincel.strokeRect(x, y, 40, altura);
+        }
+        
+        function desenhaTexto(x, y, texto)
+        {
+            let tela = document.querySelector('canvas');
+            let pincel = tela.getContext('2d');
+            
+            pincel.font = '15px Arial';
+            pincel.fillStyle = 'black';
+            pincel.fillText(texto, x, y);
+        }
+        
+        let ano2015 = [50, 25, 20, 5];
+        let ano2016 = [65, 20, 13, 2];
+        let cores = ['yellow', 'orange', 'lightblue', 'gray']
+        
+        function desenhaBarra(x, y, ano, cores, texto)        
+        {
+            let somaAltura = 0;
+            for (let navegador = 0; navegador < ano.length; navegador++) 
+            {
+                let altura = ano[navegador];
+                desenhaRetangulo(x, y + somaAltura, altura, cores[navegador]);
+                somaAltura = somaAltura + altura;   
+            }
+
+            desenhaTexto(x, y - 10, texto);
+
+        }
+
+        desenhaBarra(50, 50, ano2015, cores, '2015');
+        desenhaBarra(150, 50, ano2016, cores, '2016');
+
+    </script>
+</body>
+</html>
