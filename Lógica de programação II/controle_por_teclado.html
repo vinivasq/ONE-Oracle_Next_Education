@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mova a bolinha.</title>
+</head>
+<body>
+    <h3>Utilize as setas do teclado para controlar a bolinha.</h3>
+
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+        let tela = document.querySelector('canvas');
+        let pincel = tela.getContext('2d');
+        
+        pincel.fillStyle = 'lightgray';
+        pincel.fillRect(0, 0, 600, 400);
+
+        let x = 300;
+        let y = 200;
+
+        let esquerda = 37;
+        let cima = 38;
+        let direita = 39;
+        let baixo = 40;
+
+        let taxa = 10;
+
+        function desenhaCirculo(x, y, raio, cor)
+        {
+            pincel.fillStyle = cor;
+            pincel.beginPath();
+            pincel.arc(x, y, raio, 0, 2 * Math.PI);
+            pincel.fill();
+        }
+        
+        function limpaTela()
+        {
+            pincel.clearRect(0, 0, 600, 400);
+        }
+
+        function atualizaTela()
+        {
+            limpaTela()
+            desenhaCirculo(x, y, 10, 'blue');
+        }
+
+        function leDoTeclado (evento)
+        {
+            if(evento.keyCode == baixo)
+            {
+                y = y + taxa;
+            }
+
+            else if(evento.keyCode == cima)
+            {
+                y = y - taxa;
+            }
+
+            else if (evento.keyCode == esquerda)
+            {
+                x = x - taxa;
+            }
+
+            else if (evento.keyCode == direita)
+            {
+                x = x + taxa;
+            }
+        }
+
+        document.onkeydown = leDoTeclado;
+        console.log(leDoTeclado);
+        setInterval(atualizaTela, 20);
+
+
+
+    </script>
+</body>
+</html>
