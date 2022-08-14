@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="javascript" href="script/javascript.js">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    
+    <main>
+
+        <div class="entrada">
+            <input type="text" placeholder="Digite um texto">
+            <button id="codificar" onclick="mostraTexto()">Codificar</button>
+            <button id="decodificar">Decodificar</button>
+        </div>
+
+        <div class="resultado">
+            <img id="imagem" src="imagens/espera_texto.png" alt="Espera texto">
+            <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores, cum repellat numquam magnam autem officia sunt quaerat enim recusandae quas reiciendis temporibus odit ipsam saepe nam esse in unde?</p>
+        </div>    
+        
+    </main>
+    
+    <footer>
+        <p>Site desenvolvido por <a href="http://github.com/vinivasq">Vinícius Vasques</a></p>
+    </footer>
+
+    <script>
+        let input = document.querySelector('input');
+        let texto = document.getElementById('texto').style.display = "none";
+    
+        function mostraTexto()
+        {
+            document.getElementById("imagem").style.display = "none";
+            document.getElementById("texto").style.display = "block";
+        }
+        
+    </script>
+
+</body>
+</html>

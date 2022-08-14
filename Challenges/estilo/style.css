@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* revisar min-width, copiado do android*/
+main {
+    background-color: white;
+    height: 600px;
+    min-width: 284px;
+    max-width: 1200px;
+    margin: auto;   
+    padding: 10px;
+}
+
+.entrada {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px 210px 10px 15px;
+    height: 550px;
+    max-width: 840px;
+    border-style: solid;
+    border-color: black;
+}
+
+input {
+    height: 20px;
+    width: 500px;
+    border-style: solid;
+    border-color: lightblue;
+}
+
+#codificar {
+    position: absolute;
+    display: inline-block;
+    bottom: 40px;
+    left: 150px;
+    margin-right: 25px;
+    
+}
+
+#decodificar {
+    position: absolute;
+    display: inline-block;
+    bottom: 40px;
+    left: 375px;
+    margin-right: 25px;
+}
+
+.resultado {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 300px;
+    height: 586px;
+    background-color: black;
+
+}
+
+#imagem {
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    padding: 20px 32px 20px 28px;
+    
+}
+
+#texto {
+    position: absolute;
+    padding: 15px;
+    text-align: justify;
+    color: red;
+}
+
+
+footer {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
