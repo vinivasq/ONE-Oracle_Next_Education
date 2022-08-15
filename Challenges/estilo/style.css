@@ -10,22 +10,29 @@ body {
     padding: 10px;
 }
 
-/* revisar min-width, copiado do android*/
 main {
     background-color: white;
-    height: 600px;
-    min-width: 284px;
-    max-width: 1200px;
     margin: auto;   
     padding: 10px;
+    padding-right: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
 }
 
 .entrada {
+    flex-grow: 2;
+    align-self: flex-start;
     position: relative;
     vertical-align: top;
-    display: inline-block;
     margin-right: 20px;
-    padding: 20px 210px 10px 15px;
     height: 550px;
     max-width: 840px;
     border-style: solid;
@@ -33,6 +40,7 @@ main {
 }
 
 input {
+    margin: 10px 10px 0px;
     height: 20px;
     width: 500px;
     border-style: solid;
@@ -57,9 +65,10 @@ input {
 }
 
 .resultado {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
     position: relative;
-    display: inline-block;
-    margin: auto;
     width: 300px;
     height: 586px;
     background-color: black;
@@ -68,9 +77,7 @@ input {
 
 #imagem {
     position: absolute;
-    display: inline-block;
-    margin: auto;
-    padding: 20px 32px 20px 28px;
+    padding: 20px;
     
 }
 
@@ -87,5 +94,6 @@ footer {
     padding: 5px;
     text-align: center;
     color: white;
+    margin-top: 10px;
 }
 
