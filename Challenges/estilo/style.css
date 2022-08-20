@@ -35,6 +35,7 @@ main {
 .entrada {
     display: flex;
     flex-grow: 3;
+    flex-direction: column;
     align-self: flex-start;
     position: relative;
     margin-right: 20px;
@@ -42,25 +43,29 @@ main {
     max-width: 840px;
 }
 
-input {
+#input {
     margin: 10px 10px 0px;
-    align-self: flex-start;
-    height: auto;
-    width: auto;
+    flex-grow: 1;
     border-style: none;
     background: none;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .button {
-    position: absolute;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    margin-bottom: 5px;
     gap: 30px;
-    top: 525px;
-    left: 200px;
+}
 
+.info {
+    font-size: 14px;
+    color: #495057;
 }
 
 #codificar {
@@ -91,7 +96,7 @@ input {
     justify-content: center;
     width: 200px;
     height: 36px;
-    background: #D8DFE8;
+    background: none;
     border: 1px solid #0A3871;
     border-radius: 10px;
     
@@ -105,9 +110,12 @@ input {
     
 }
 
+
+
 .resultado {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-grow: 1;
     position: relative;
     width: 300px;
@@ -125,17 +133,47 @@ input {
 }
 
 #texto {
-    position: absolute;
+    position: relative;
     padding: 15px 25px;
-    text-align: justify;
     color: #495057;
-    font-family: 'Inter';
+    font-family: 'sans-serif';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    margin: 5px 20px;
+    width: 350px;
+    height: 500px;
+    border: none;
 }
 
+#copiar {
+    position: absolute;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 36px;
+    background: none;
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    color: #495057;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
 
 footer {
     background-color: black;
