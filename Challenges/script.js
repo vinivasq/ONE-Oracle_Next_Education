@@ -6,6 +6,20 @@ let textoDecodificado;
 
 texto.style.display = "none";
 
+function mostraTexto()
+{
+    if (texto.value != 0)
+    {    
+        imagem.style.display = "none";
+        texto.style.display = "block";
+    }
+    else
+    {
+        imagem.style.display = "block";
+        texto.style.display = "none";
+    }
+}
+
 function criptografar()
 {
     textoCodificado = input.value.toLowerCase();
@@ -18,8 +32,7 @@ function criptografar()
   
     texto.textContent = textoCodificado;
     
-    imagem.style.display = "none";
-    texto.style.display = "block";
+    mostraTexto();
 }
 
 function descriptografar()
@@ -34,8 +47,7 @@ function descriptografar()
     
     texto.textContent = textoDecodificado;   
     
-    imagem.style.display = "none";
-    texto.style.display = "block";
+    mostraTexto();
 }
 
 function copiar()

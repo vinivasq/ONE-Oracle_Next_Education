@@ -7,8 +7,14 @@
     padding: 0px;
 }
 
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
 body {
-    background-color: #eee4fe;
+    background-image: linear-gradient(to bottom, #A7BAFD, #b43cffc9);
     padding: 0px;
 }
 
@@ -18,7 +24,7 @@ main {
     padding: 10px;
     padding-right: 20px;
     border-radius: 6px;
-    box-shadow: 0px 24px 32px -8px #00000014;
+    box-shadow: 0.078125px 0 32px -8px #6a00cc7a;
 
 }
 
@@ -75,7 +81,8 @@ main {
     justify-content: center;
     width: 200px;
     height: 36px;
-    background: #0A3871;
+    background: #A27EFD;
+    box-shadow: 1px 1px 7px -3px rgba(0, 0, 0, 0.47);
     border: none;
     border-radius: 10px;
     
@@ -97,20 +104,19 @@ main {
     width: 200px;
     height: 36px;
     background: none;
-    border: 1px solid #0A3871;
+    box-shadow: 1px 1px 7px -3px rgba(0, 0, 0, 0.47);
+    border: 1px solid #A27EFD;
     border-radius: 10px;
     
     font-family: 'Inter';
     font-size: 16px;
     font-weight: 400;
-    color: #0A3871;
+    color: #495057;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
     
 }
-
-
 
 .resultado {
     display: flex;
@@ -122,14 +128,12 @@ main {
     height: 600px;
     background-color: #FFFFFF;
     border-radius: 20px;
-    box-shadow: 0px 24px 32px -8px #00000014;
-
+    box-shadow: 0.078125px 11px 32px -8px #00000017;
 }
 
 #imagem {
     position: absolute;
     padding: 20px;
-    
 }
 
 #texto {
@@ -154,7 +158,8 @@ main {
     width: 200px;
     height: 36px;
     background: none;
-    border: 1px solid #0A3871;
+    box-shadow: 1px 1px 7px -3px rgba(0, 0, 0, 0.47);
+    border: 1px solid #A27EFD;
     border-radius: 10px;
     
 
@@ -168,18 +173,20 @@ main {
 
 }
 
-
-textarea:focus, input:focus, select:focus {
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-} 
-
 footer {
-    background-color: black;
-    padding: 5px;
-    text-align: center;
-    color: white;
-    margin-top: 10px;
+    display: flex;
 }
 
+footer p {
+    margin: 20px;
+    font-family: 'Inter';
+    text-align: center;
+    color: white;
+    box-shadow: 1px 1px 7px -3px rgba(0, 0, 0, 0.47);
+}
+
+/* ou faz assim ou baixa a awesome font, é o mais legit e responsivo a ser feito*/
+footer img{
+    width: 16px;
+    height: 16px;
+}
