@@ -128,9 +128,25 @@ form label, form legend {
     border: none;
     border-radius: 5px;
     box-shadow: 1px 1px 6px -2px #000000;
-    transition: .5s background;
+    transition: .5s all;
 }
 
 .enviar:hover {
     background: darkorange;
+    transform: scale(1.05);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
 }
