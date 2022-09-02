@@ -9,16 +9,19 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.caixa {
+.header_container {
+    display: flex;
     position: relative;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
-    width: 940px;
+    width: auto;
+    padding: 0 10%;
 }
 
-nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
+nav ul {
+    display: flex;
+    flex-direction: row;
 }
 
 nav li {
@@ -40,15 +43,17 @@ nav a:hover {
 }
 
 .produtos {
-    width: 940px;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
     padding: 50px 0;
 }
 
 .produtos li {
-    display: inline-block;
     text-align: center;
-    width: 30%;
+    flex-wrap: wrap;
+    width: 28vw;
     vertical-align: top;
     margin: 0 1.5%;
     padding: 30px 20px;
@@ -159,7 +164,15 @@ td, th {
 /* css da pagina inicial */
 
 .banner {
+    background-color: rgba(47, 47, 47);
+    box-shadow: inset 1px 2px 13px 4px rgba(0, 0, 0, 0.452);
+    color: white;
     width: 100%;
+    height: 55vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../imagens/banner_1300.jpg);
 }
 
 .titulo_principal {
@@ -172,7 +185,7 @@ td, th {
 .principal {
     padding: 3em 0;
     background: #FEFEFE;
-    width: 940px;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -200,7 +213,7 @@ td, th {
 }
 
 .mapa_conteudo {
-    width: 940px;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -253,6 +266,17 @@ td, th {
     margin: 2em auto;
 }
 
+@media screen and (max-width: 680px) {
+    .header_container{
+        flex-direction: column;
+    }
+
+    .lista_beneficios, .conteudo_beneficios, .imagem_beneficios, .video{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .caixa, .principal, .conteudo_beneficios, .mapa_conteudo, .video, .produtos, .form_container {
         width: auto;
@@ -271,6 +295,10 @@ td, th {
     nav a {
         font-size: 1.2em;
         
+    }
+
+    .banner {
+        height: 30vh;
     }
 
     .lista_beneficios, .imagem_beneficios {
