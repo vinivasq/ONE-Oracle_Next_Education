@@ -10,7 +10,7 @@ body {
     height: 10vh;
 }
 
-.buttons-container {
+.index-buttons {
     display: flex;
     height: 75vh;
     flex-direction: column;
@@ -55,6 +55,26 @@ footer p {
 
 footer a {
     color: inherit;
+}
+
+ /* página jogo */
+
+.jogo {
+    display: flex;
+    height: 65vh;
+}
+
+.jogo-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em 3em;
+}
+
+.desistir {
+    background: none;
+    border: solid 1px #0A3871;
+    color: #0A3871;
 }
 
 @media screen and (max-width: 480px) {
