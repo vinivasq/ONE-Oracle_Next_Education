@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body {
     background-color: #F3F5FC;
-    height: 90vh;
+    font-family: 'Inter';
 }
 
 .logo {
-    margin: 15px 15px;
-    width: 3vw;
+    margin: 4vh 4vh 0;
+    height: 10vh;
 }
 
 .buttons-container {
     display: flex;
-    height: 80vh;
+    height: 75vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -35,6 +37,24 @@ button {
     background: none;
     border: solid 1px #0A3871;
     color: #0A3871;
+}
+
+footer {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1em;
+    text-align: center;
+    color: #0A3871;
+    text-shadow:  #0a38714a 2px 3px 7px;
+}
+
+footer a {
+    color: inherit;
 }
 
 @media screen and (max-width: 480px) {
