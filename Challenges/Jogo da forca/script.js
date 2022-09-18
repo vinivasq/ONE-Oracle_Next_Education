@@ -27,3 +27,11 @@ function DesenhaTabuleiro(x)
     pincel.stroke();
 }
 
+function SorteiaPalavra(palavras)
+{
+    var palavraSecreta;
+    palavraSecreta = Math.random(palavras);
+    console.log(palavraSecreta);
+}
+
+let palavras = ["alura", "carro", "celular", "cachorro", "torta", "espelho"]
