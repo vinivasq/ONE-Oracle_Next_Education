@@ -20,20 +20,25 @@ body {
 }
 
 button {
+    display: flex;
     border-radius: 1.3em;
+    box-shadow: 2px 2px 8px -3px rgba(0, 0, 0, 0.47);
     padding: 1.5em;
-    width: 20em;
-    height: 4em;
+    width: 15em;
+    height: 2em;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
 
 }
 
-.novo-jogo {
+.btn-primario {
     color: #FFFFFF;
     border: none;
     background-color: #0A3871;
 }
 
-.adicionar-palavra {
+.btn-secundario {
     background: none;
     border: solid 1px #0A3871;
     color: #0A3871;
@@ -57,15 +62,26 @@ footer a {
     color: inherit;
 }
 
- /* página jogo */
-
-.jogo {
+.content-container {
     display: flex;
     justify-content: center;
     height: 68vh;
 }
 
-.jogo-buttons {
+.palavra {
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+    margin: 10% auto;
+    margin-top: 5%;
+    font-size: 2em;
+    color: #0A3871;
+    background: none;
+    border: none;
+
+}
+
+.buttons-container {
     display: flex;
     height: 12vh;
     flex-wrap: wrap;
@@ -74,29 +90,28 @@ footer a {
     gap: 1em 3em;
 }
 
-.desistir {
-    background: none;
-    border: solid 1px #0A3871;
-    color: #0A3871;
-}
 
 @media screen and (max-width: 480px) {
     .logo {
         width: 10vw;
     }
 
-    .jogo {
+    .content-container {
         height: 60vh;
     }
 
-    .jogo-buttons {
+    .buttons-container {
         height: 20vh;
         flex-direction: column;
     }
 
+    .palavra {
+        height: 50vh;
+    }
+
     canvas {
-        max-width: 100vw;
-        max-height: 60vh;
-        margin-left: 10%;
+        width: 100vw;
+        height: 40vh;
+
     }
 }

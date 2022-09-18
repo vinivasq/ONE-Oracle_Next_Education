@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Jogo da Forca</title>
 </head>
-<body>
+<body onload="SorteiaPalavra()">
     <img src="images/alura-logo.svg" class="logo" alt="Logo da Alura">
     
-    <section class="jogo">     
+    <section class="content-container">     
         <canvas width="800" height="400"></canvas>
     </section>
 
-    <div class="jogo-buttons">
-        <button onclick= "window.location.href= 'jogo.html'" class="novo-jogo">Novo Jogo</button>
-        <button onclick= "window.location.href= 'index.html'" class="desistir">Desistir</button>
+    <div class="buttons-container">
+        <button onclick= "window.location.href= 'jogo.html'" class="btn-primario">Novo Jogo</button>
+        <button onclick= "window.location.href= 'index.html'" class="btn-secundario">Desistir</button>
     </div>
 
     <footer>
