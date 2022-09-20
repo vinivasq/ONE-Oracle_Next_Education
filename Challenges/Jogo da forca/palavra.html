@@ -13,14 +13,14 @@
 <body>
     <img src="images/alura-logo.svg" class="logo" alt="Logo da Alura">
 
-    <textarea class="palavra" placeholder="Digite uma palavra..."></textarea>
+    <textarea id="palavra_adicionada" class="palavra" placeholder="Digite uma palavra..."></textarea>
 
     <p class="info">
         <i class="fa-solid fa-circle-exclamation"></i>Máx. 8 letras sem acento.
     </p>
     
     <div class="buttons-container">
-        <button class="btn-primario">Enviar palavra</button>
+        <button onclick="AdicionaPalavra()" class="btn-primario">Adicionar palavra</button>
         <button onclick="window.location.href= 'index.html'" class="btn-secundario">Voltar</button>
     </div>
 
