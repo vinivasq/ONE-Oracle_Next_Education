@@ -37,6 +37,7 @@ button {
     align-items: center;
     justify-content: center;
     font-size: 1em;
+    transition: 500ms all;
 }
 
 .btn-primario {
@@ -49,6 +50,15 @@ button {
     background: none;
     border: solid 1px #0A3871;
     color: #0A3871;
+}
+
+.btn-primario:hover {
+    background-color: #004dab;
+    transform: scale(1.05);
+}
+
+.btn-secundario:hover {
+    transform: scale(1.05);
 }
 
 footer {

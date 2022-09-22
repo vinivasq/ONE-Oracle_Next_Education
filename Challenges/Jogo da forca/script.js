@@ -1,9 +1,14 @@
 function IniciaJogo() 
 {
     BotoesRow();
-    jogo.style.display = 'flex';
-    btnDesistir.style.display = 'flex';
+    palavra.style.display = 'none';
+    btnComecaJogo.style.display = 'none';
     btnAdicionaPalavra.style.display = 'none';
+    btnSalvaComeca.style.display = 'none';
+    btnVoltar.style.display = 'none';
+    jogo.style.display = 'flex';
+    btnNovoJogo.style.display = 'flex';
+    btnDesistir.style.display = 'flex';
     let tela = document.querySelector('canvas');
     let pincel = tela.getContext('2d');
     
@@ -41,11 +46,12 @@ function IniciaJogo()
 function AdicionaPalavra()
 {
     BotoesRow();
+    btnComecaJogo.style.display = 'none';
     btnNovoJogo.style.display = 'none';
+    btnAdicionaPalavra.style.display = 'none';
     palavraInput.style.display = 'flex';
+    btnSalvaComeca.style.display = 'flex';
     btnVoltar.style.display = 'flex';
-    btnAdicionaPalavra.style.display = 'flex';
-    btnAdicionaPalavra.classList.replace('btn-secundario', 'btn-primario');
     var input = document.querySelector("textarea");
     palavraAdicionada = input.value
     palavrasChave.push(palavraAdicionada);
@@ -58,9 +64,11 @@ function VoltarIndex() {
     BotoesColumn();
     jogo.style.display = 'none';
     palavraInput.style.display = 'none';
+    btnSalvaComeca.style.display = 'none';
+    btnNovoJogo.style.display = 'none';
     btnDesistir.style.display = 'none';
     btnVoltar.style.display = 'none';
-    btnNovoJogo.style.display = 'flex';
+    btnComecaJogo.style.display = 'flex';
     btnAdicionaPalavra.style.display = 'flex';
     btnAdicionaPalavra.classList.replace('btn-primario', 'btn-secundario');
 }
@@ -81,20 +89,22 @@ let palavrasChave = ["alura", "carro", "celular", "cachorro", "torta", "espelho"
 let jogo = document.getElementById("jogo");
 let palavraInput = document.getElementById("palavra");
 let botoes = document.getElementById("buttons-container");
+let btnComecaJogo = document.getElementById("comeca-jogo");
 let btnNovoJogo = document.getElementById("novo-jogo");
-let btnAdicionaPalavra = document.getElementById("adiciona-palavra");
+let btnAdicionaPalavra = document.getElementById("adicionar-palavra");
+let btnSalvaComeca = document.getElementById("salvar-comecar");
 let btnDesistir = document.getElementById("desistir");
 let btnVoltar = document.getElementById("voltar");
 
-
-jogo.style.display = 'none';
-palavraInput.style.display = 'none';
-btnDesistir.style.display = 'none';
-btnVoltar.style.display = 'none';
-btnNovoJogo.onclick = IniciaJogo;
+btnComecaJogo.onclick = IniciaJogo;
 btnAdicionaPalavra.onclick = AdicionaPalavra;
+btnSalvaComeca.onclick = IniciaJogo;
 btnVoltar.onclick = VoltarIndex;
 btnDesistir.onclick = VoltarIndex;
 
-
-
+jogo.style.display = 'none';
+palavraInput.style.display = 'none';
+btnSalvaComeca.style.display = 'none';
+btnNovoJogo.style.display = 'none';
+btnDesistir.style.display = 'none';
+btnVoltar.style.display = 'none';
