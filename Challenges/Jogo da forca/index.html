@@ -13,14 +13,28 @@
 <body>
     <img src="images/alura-logo.svg" alt="logo da alura" class="logo">
     
-    <div class="index-buttons">
-        
-        <button onclick= "window.location.href= 'jogo.html'" class="btn-primario" >Novo Jogo</button>
-        <button onclick= "window.location.href= 'palavra.html'" class="btn-secundario">Adicionar Palavra</button>
+    <section id="palavra" class="content-container">
+        <textarea class="palavra" placeholder="Digite uma palavra..."></textarea>
+        <p class="info">
+            <i class="fa-solid fa-circle-exclamation"></i>Máx. 8 letras sem acento.
+        </p>
+    </section>
+
+    <section id="jogo" class="content-container">     
+        <canvas width="800" height="400"></canvas>
+    </section>
+    
+    <div id="buttons-container">
+        <button id="novo-jogo" class="btn-primario">Novo Jogo</button>
+        <button id="adiciona-palavra" class="btn-secundario">Adicionar Palavra</button>
+        <button id="voltar" class="btn-secundario">Voltar</button>
+        <button id="desistir" class="btn-secundario">Desistir</button>
     </div>
 
     <footer>
         <p>Desenvolvido por Vinícius Vasques. <a href="https://www.linkedin.com/in/vinivasq/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/vinivasq" target="_blank"><i class="fa-brands fa-github"></i></a></p> 
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

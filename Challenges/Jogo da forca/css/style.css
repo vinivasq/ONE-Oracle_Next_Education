@@ -10,26 +10,19 @@ body {
     height: 10vh;
 }
 
-.index-buttons {
+#buttons-container {
     display: flex;
-    height: 80vh;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: .5em;
-}
-
-.buttons-container {
-    display: flex;
-    height: 12vh;
+    height: 80vh;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1em 3em;
+    gap: .5em 3em;
 }
 
 .content-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 68vh;
 }
@@ -44,7 +37,6 @@ button {
     align-items: center;
     justify-content: center;
     font-size: 1em;
-
 }
 
 .btn-primario {
@@ -87,7 +79,6 @@ footer a {
     color: #0A3871;
     background: none;
     border: none;
-
 }
 
 .info {
@@ -120,6 +111,9 @@ footer a {
         flex-direction: column;
     }
 
+    footer {
+        height: 15vh;
+    }
 
     canvas {
         width: 100vw;
