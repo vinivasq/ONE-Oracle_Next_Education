@@ -1,7 +1,7 @@
 function IniciaJogo() 
 {
     TelaJogo();
-    let palavraSecreta = Math.ceil(Math.random(palavrasChave) *palavrasChave.length -1);
+    let palavraSecreta = Math.floor(Math.random(palavrasChave) *palavrasChave.length);
     let tela = document.querySelector('canvas');
     let pincel = tela.getContext('2d');
     
