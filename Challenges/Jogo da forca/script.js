@@ -5,6 +5,7 @@ function IniciaJogo()
     let tela = document.querySelector('canvas');
     let pincel = tela.getContext('2d');
     
+    //separar o desenho do canvas, tanto forca quanto tabuleiro e letras da logica como recomendaram no challenge
     pincel.strokeStyle = '#0A3871';
     pincel.beginPath();
     pincel.moveTo(300, 10);
@@ -103,7 +104,7 @@ function TelaJogo() {
 function BotoesColumn() {
     
     botoes.style.flexDirection = 'column';
-    botoes.style.height= '80vh';
+    botoes.style.height= '70vh';
 }
 
 function BotoesRow() {
