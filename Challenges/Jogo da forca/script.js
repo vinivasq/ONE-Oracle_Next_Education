@@ -2,8 +2,7 @@ function IniciaJogo()
 {
     BotoesRow();
     palavra.style.display = 'none';
-    btnComecaJogo.style.display = 'none';
-    btnAdicionaPalavra.style.display = 'none';
+    btnAdicionarPalavra.style.display = 'none';
     btnSalvaComeca.style.display = 'none';
     btnVoltar.style.display = 'none';
     jogo.style.display = 'flex';
@@ -46,9 +45,8 @@ function IniciaJogo()
 function AdicionaPalavra()
 {
     BotoesRow();
-    btnComecaJogo.style.display = 'none';
     btnNovoJogo.style.display = 'none';
-    btnAdicionaPalavra.style.display = 'none';
+    btnAdicionarPalavra.style.display = 'none';
     palavraInput.style.display = 'flex';
     btnSalvaComeca.style.display = 'flex';
     btnVoltar.style.display = 'flex';
@@ -65,12 +63,10 @@ function VoltarIndex() {
     jogo.style.display = 'none';
     palavraInput.style.display = 'none';
     btnSalvaComeca.style.display = 'none';
-    btnNovoJogo.style.display = 'none';
     btnDesistir.style.display = 'none';
     btnVoltar.style.display = 'none';
-    btnComecaJogo.style.display = 'flex';
-    btnAdicionaPalavra.style.display = 'flex';
-    btnAdicionaPalavra.classList.replace('btn-primario', 'btn-secundario');
+    btnAdicionarPalavra.style.display = 'flex';
+    btnNovoJogo.style.display = 'flex';
 }
 
 function BotoesColumn() {
@@ -89,15 +85,14 @@ let palavrasChave = ["alura", "carro", "celular", "cachorro", "torta", "espelho"
 let jogo = document.getElementById("jogo");
 let palavraInput = document.getElementById("palavra");
 let botoes = document.getElementById("buttons-container");
-let btnComecaJogo = document.getElementById("comeca-jogo");
 let btnNovoJogo = document.getElementById("novo-jogo");
-let btnAdicionaPalavra = document.getElementById("adicionar-palavra");
+let btnAdicionarPalavra = document.getElementById("adicionar-palavra");
 let btnSalvaComeca = document.getElementById("salvar-comecar");
 let btnDesistir = document.getElementById("desistir");
 let btnVoltar = document.getElementById("voltar");
 
-btnComecaJogo.onclick = IniciaJogo;
-btnAdicionaPalavra.onclick = AdicionaPalavra;
+btnNovoJogo.onclick = IniciaJogo;
+btnAdicionarPalavra.onclick = AdicionaPalavra;
 btnSalvaComeca.onclick = IniciaJogo;
 btnVoltar.onclick = VoltarIndex;
 btnDesistir.onclick = VoltarIndex;
@@ -105,6 +100,5 @@ btnDesistir.onclick = VoltarIndex;
 jogo.style.display = 'none';
 palavraInput.style.display = 'none';
 btnSalvaComeca.style.display = 'none';
-btnNovoJogo.style.display = 'none';
 btnDesistir.style.display = 'none';
 btnVoltar.style.display = 'none';
