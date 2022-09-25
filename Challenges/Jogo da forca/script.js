@@ -1,62 +1,18 @@
 function IniciaJogo() 
 {
     TelaJogo();
-    let palavraSecreta = Math.floor(Math.random(palavrasChave) *palavrasChave.length);
-    let tela = document.querySelector('canvas');
-    let pincel = tela.getContext('2d');
-    
-    //separar o desenho do canvas, tanto forca quanto tabuleiro e letras da logica como recomendaram no challenge
-    pincel.strokeStyle = '#0A3871';
-    pincel.beginPath();
-    pincel.moveTo(300, 10);
-    pincel.lineTo(300, 275);
-    pincel.stroke();
-    pincel.moveTo(250, 275);
-    pincel.lineTo(350, 275);
-    pincel.stroke();
-    
-    pincel.moveTo(300, 10);
-    pincel.lineTo(400, 10);
-    pincel.stroke();
-    pincel.lineTo(400, 60);
-    pincel.stroke();
-    pincel.moveTo(375, 60);
-    pincel.lineTo(425, 60);
-    pincel.stroke();
-    pincel.closePath();
-
-    function DesenhaLinha(x) 
-    {      
-        pincel.moveTo(x, 350);
-        pincel.lineTo(x + 50, 350);
-        pincel.stroke();
-    }
-    
-    function DesenhaTabuleiro() 
-    {
-        let primeiraLetra;
-        if (palavrasChave[palavraSecreta].length > 5) {
-            primeiraLetra = 100;
-        }
-        else{
-            primeiraLetra = 200;
-        }
-
-        for (let i = 0; i < palavrasChave[palavraSecreta].length; i++) {
-            console.log(i);
-            DesenhaLinha(primeiraLetra);
-            primeiraLetra = primeiraLetra + 75;
-        }
-    }
-
-
-    console.log(palavrasChave[palavraSecreta]);
-    console.log(palavrasChave[palavraSecreta].length);
-    
+    DesenhaForca();
     DesenhaTabuleiro();
 
-}
+    document.onkeydown = (e) => {
+        let key = e.keyCode;
 
+        if (VerificaLetra(key)) {
+            
+        }
+
+    }
+}
 
 function AdicionaPalavra()
 {
@@ -112,6 +68,17 @@ function BotoesRow() {
     botoes.style.height= '12vh';
 }
 
+function VerificaLetra(key) {
+    let letra = String.fromCharCode(key).toUpperCase();
+    if (key >= 65 && key <=90) {
+        letras.push(letra);
+        console.log(key);
+        console.log(letra)
+        console.log(letras);
+    }
+}
+
+let letras = [];
 let palavrasChave = ["alura", "carro", "celular", "cachorro", "torta", "espelho", "notebook", "mesa"];
 
 let jogo = document.getElementById("jogo");

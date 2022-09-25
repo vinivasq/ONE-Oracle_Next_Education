@@ -40,6 +40,10 @@ button {
     transition: 500ms all;
 }
 
+button:hover {
+    transform: scale(1.02);
+}
+
 .btn-primario {
     color: #FFFFFF;
     border: none;
@@ -54,11 +58,6 @@ button {
 
 .btn-primario:hover {
     background-color: #004dab;
-    transform: scale(1.05);
-}
-
-.btn-secundario:hover {
-    transform: scale(1.05);
 }
 
 footer {
