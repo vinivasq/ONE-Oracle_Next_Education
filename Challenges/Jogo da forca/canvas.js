@@ -24,17 +24,15 @@ function DesenhaForca()
     pincel.closePath();
 }
 
-function DesenhaLinha(x) 
+function DesenhaLinha(posicao) 
 {      
-    pincel.moveTo(200 + x, 350);
-    pincel.lineTo(250 + x, 350);
+    pincel.moveTo(200 + posicao, 350);
+    pincel.lineTo(250 + posicao, 350);
     pincel.stroke();
 }
 
 function DesenhaTabuleiro() 
-{
-    
-    let palavraSecreta = palavrasChave[Math.floor(Math.random() *palavrasChave.length)];
+{   
     let largura = 450/palavraSecreta.length;
     console.log(palavraSecreta);
     console.log(palavraSecreta.length);
@@ -43,4 +41,12 @@ function DesenhaTabuleiro()
         console.log(i);
         DesenhaLinha(largura*i);
     }
+}
+
+function EscreveLetraCerta(i)
+{
+    pincel.font = "200px";
+    pincel.fillStyle = '#0A3871';
+    let largura = 450/palavraSecreta.length;
+    pincel.fillText(palavraSecreta[i], 225 + (largura * i) , 340);
 }

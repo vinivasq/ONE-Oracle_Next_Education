@@ -2,16 +2,44 @@ function IniciaJogo()
 {
     TelaJogo();
     DesenhaForca();
+    SorteiaPalavra();
     DesenhaTabuleiro();
-
     document.onkeydown = (e) => {
         let key = e.keyCode;
-
-        if (VerificaLetra(key)) {
-            
+        let letra = String.fromCharCode(key);
+    
+        if (VerificaLetra(key, letra) && palavraSecreta.includes(letra) ) {
+            for (let i = 0; i < palavraSecreta.length; i++) {
+                if (palavraSecreta[i] === letra) {
+                    EscreveLetraCerta(i);
+                }   
+            }
         }
+    }
+}
+
+function VerificaLetra(key, letra) {
+    let estado = true;
+    if (key >= 65 && key <=90) {
+        letras.push(letra);
+        console.log(letra);
+        console.log(letras);
+        return estado;
+    }
+    else {
+        estado = false;
+        letras.push(letra);
+        console.log(letra);
+        console.log(letras, 'if false');
+        return estado;
 
     }
+}
+
+function SorteiaPalavra() {
+    let palavra = palavrasChave[Math.floor(Math.random() * palavrasChave.length)]
+    palavraSecreta = palavra
+    return palavra
 }
 
 function AdicionaPalavra()
@@ -68,18 +96,9 @@ function BotoesRow() {
     botoes.style.height= '12vh';
 }
 
-function VerificaLetra(key) {
-    let letra = String.fromCharCode(key).toUpperCase();
-    if (key >= 65 && key <=90) {
-        letras.push(letra);
-        console.log(key);
-        console.log(letra)
-        console.log(letras);
-    }
-}
-
+let palavrasChave = ["ALURA", "CARRO", "CELULAR", "CACHORRO", "TORTA", "ESPELHO", "NOTEBOOK", "MESA"];
+let palavraSecreta = '';
 let letras = [];
-let palavrasChave = ["alura", "carro", "celular", "cachorro", "torta", "espelho", "notebook", "mesa"];
 
 let jogo = document.getElementById("jogo");
 let palavraInput = document.getElementById("palavra");
