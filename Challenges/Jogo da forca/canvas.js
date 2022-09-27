@@ -1,10 +1,15 @@
 let tela = document.querySelector('canvas');
 let pincel = tela.getContext('2d');
+pincel.fillStyle = '#0A3871';
+pincel.strokeStyle = '#0A3871';
+pincel.lineCap = 'round';
+pincel.lineWidth = 3;
+pincel.font = "30px Inter";
+
 
 function DesenhaForca()
 {
     pincel.clearRect(0, 0, tela.width, tela.height);
-    pincel.strokeStyle = '#0A3871';
     pincel.beginPath();
     pincel.moveTo(300, 10);
     pincel.lineTo(300, 275);
@@ -45,8 +50,6 @@ function DesenhaTabuleiro()
 
 function EscreveLetraCerta(i)
 {
-    pincel.font = "200px";
-    pincel.fillStyle = '#0A3871';
-    let largura = 450/palavraSecreta.length;
-    pincel.fillText(palavraSecreta[i], 225 + (largura * i) , 340);
+        let largura = 450/palavraSecreta.length;
+    pincel.fillText(palavraSecreta[i], 215 + (largura * i) , 340);
 }

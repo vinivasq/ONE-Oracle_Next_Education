@@ -27,6 +27,10 @@ body {
     height: 68vh;
 }
 
+canvas {
+    margin: auto;
+}
+
 button {
     display: flex;
     border-radius: 1.3em;
@@ -114,14 +118,12 @@ footer a {
         justify-content: center;
         margin-left: 0;
     }
+    
+    canvas {
+        width: 100vw;
+    }
 
     footer {
         height: 15vh;
-    }
-
-    canvas {
-        width: 100vw;
-        height: 40vh;
-
     }
 }
