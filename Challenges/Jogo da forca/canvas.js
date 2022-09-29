@@ -29,6 +29,47 @@ function DesenhaForca()
     pincel.closePath();
 }
 
+function DesenhaBoneco(erros)
+{
+    switch (erros) {
+        case 5:
+            pincel.beginPath();
+            pincel.arc(400, 85, 20, 0, 2 * Math.PI);
+            pincel.stroke();
+            break;
+        
+        case 4:
+            pincel.moveTo(400, 105);
+            pincel.lineTo(400, 200);
+            pincel.stroke();
+            break;
+        
+        case 3:
+            pincel.moveTo(400, 110);
+            pincel.lineTo(370, 160);
+            pincel.stroke();
+            break;
+        case 2:
+            pincel.moveTo(400, 110);
+            pincel.lineTo(430, 160);
+            pincel.stroke();
+            break;
+
+        case 1:
+            pincel.moveTo(400, 200);
+            pincel.lineTo(380, 240);
+            pincel.stroke();
+            break;
+        case 0:
+            pincel.moveTo(400, 200);
+            pincel.lineTo(420, 240);
+            pincel.stroke();
+            break;
+        default:
+            break;
+    }
+}
+
 function DesenhaLinha(posicao) 
 {      
     pincel.moveTo(200 + posicao, 350);

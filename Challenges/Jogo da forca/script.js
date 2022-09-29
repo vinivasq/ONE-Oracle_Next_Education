@@ -25,10 +25,11 @@ function IniciaJogo()
                 }   
             }
         }
-        else if (VerificaLetra(key, letra) && !letrasErradas.includes(letra)){
+        else if (VerificaLetra(key, letra) && !letrasErradas.includes(letra)) {
             letrasErradas.push(letra);
             EscreveLetraErrada(letra);
             erros --;
+            DesenhaBoneco(erros);
             VerificaErros();
         }
     }
