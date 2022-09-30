@@ -92,7 +92,6 @@ function VoltarIndex() {
     jogo.style.display = 'none';
     mobileInput.style.display = 'none';
     palavraInput.style.display = 'none';
-    mobileInput.style.display = 'none';
     btnSalvaComeca.style.display = 'none';
     btnDesistir.style.display = 'none';
     btnVoltar.style.display = 'none';
@@ -143,8 +142,8 @@ let acertos = 0;
 
 let jogo = document.getElementById("jogo");
 let palavraInput = document.getElementById("palavra");
-let mobileInput = document.getElementById("mobile-input");
 let botoes = document.getElementById("buttons-container");
+let mobileInput = document.getElementById("mobile-input");
 let btnNovoJogo = document.getElementById("novo-jogo");
 let btnChutar = document.getElementById("chutar");
 let input = document.getElementById("input");
@@ -162,7 +161,6 @@ btnDesistir.onclick = VoltarIndex;
 jogo.style.display = 'none';
 mobileInput.style.display = 'none';
 palavraInput.style.display = 'none';
-mobileInput.style.display = 'none';
 btnSalvaComeca.style.display = 'none';
 btnDesistir.style.display = 'none';
 btnVoltar.style.display = 'none';
