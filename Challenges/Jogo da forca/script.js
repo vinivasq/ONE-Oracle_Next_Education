@@ -15,6 +15,9 @@ function IniciaJogo()
         let key = e.keyCode;
         let letra = String.fromCharCode(key);
         ProcessaEntrada(key, letra);
+        if (mobileInput.value.length >=1) {
+            mobileInput.value = "";
+        }
     }
 }
 
