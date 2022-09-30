@@ -100,6 +100,7 @@ function VoltarIndex() {
     btnVoltar.style.display = 'none';
     btnAdicionarPalavra.style.display = 'flex';
     btnNovoJogo.style.display = 'flex';
+    footer.style.marginTop = "5vh";
 }
 
 function TelaPalavra() {
@@ -109,6 +110,7 @@ function TelaPalavra() {
     palavraInput.style.display = 'flex';
     btnSalvaComeca.style.display = 'flex';
     btnVoltar.style.display = 'flex';
+    footer.style.marginTop = "25vh";
 }
 
 function TelaJogo() {
@@ -124,6 +126,7 @@ function TelaJogo() {
     jogo.style.display = 'flex';
     btnNovoJogo.style.display = 'flex';
     btnDesistir.style.display = 'flex';
+    footer.style.marginTop = "15vh";
 }
 
 function BotoesColumn() {
@@ -144,6 +147,7 @@ let erros = 6;
 let acertos = 0;
 
 let jogo = document.getElementById("jogo");
+let footer = document.querySelector("footer");
 let palavraInput = document.getElementById("palavra");
 let botoes = document.getElementById("buttons-container");
 let mobileInput = document.getElementById("mobile-input");
