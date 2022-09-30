@@ -100,7 +100,10 @@ function VoltarIndex() {
     btnVoltar.style.display = 'none';
     btnAdicionarPalavra.style.display = 'flex';
     btnNovoJogo.style.display = 'flex';
-    footer.style.marginTop = "5vh";
+    
+    if (window.innerWidth <480) {
+        footer.style.marginTop = "5vh";
+    }
 }
 
 function TelaPalavra() {
@@ -110,12 +113,16 @@ function TelaPalavra() {
     palavraInput.style.display = 'flex';
     btnSalvaComeca.style.display = 'flex';
     btnVoltar.style.display = 'flex';
-    footer.style.marginTop = "25vh";
+
+    if (window.innerWidth <480) {
+        footer.style.marginTop = "25vh";
+    }
 }
 
 function TelaJogo() {
     if (window.innerWidth < 480) {
         mobileInput.style.display = 'flex';
+        footer.style.marginTop = "15vh";
     }
 
     BotoesRow();
@@ -126,7 +133,6 @@ function TelaJogo() {
     jogo.style.display = 'flex';
     btnNovoJogo.style.display = 'flex';
     btnDesistir.style.display = 'flex';
-    footer.style.marginTop = "15vh";
 }
 
 function BotoesColumn() {
