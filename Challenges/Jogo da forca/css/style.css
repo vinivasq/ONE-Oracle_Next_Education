@@ -21,10 +21,14 @@ body {
 }
 
 #mobile-input {
-    display: flex;
-    justify-content: center;
-    gap: .5em;
-    margin-bottom: .5em;
+    margin: auto;
+    margin-bottom: 5em;
+    padding: .5em 0;
+    text-align: center;
+    width: 15em;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #004dab;
 }
 
 #input {
@@ -129,14 +133,26 @@ footer a {
         width: 10vw;
     }
 
+    #mobile-input {
+        margin: auto;
+        margin-bottom: 5em;
+        padding: .5em 0;
+        text-align: center;
+        width: 15em;
+        background: none;
+        border: none;
+        border-bottom: solid 1px #004dab;
+    }
+
     .content-container {
         height: 50vh;
+        height: 40vh;
     }
     
     .palavra {
         height: 50vh;
     }
-
+    
     .info {
         justify-content: center;
         margin-left: 0;

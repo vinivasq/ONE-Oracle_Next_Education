@@ -14,24 +14,27 @@ function IniciaJogo()
     document.onkeydown = (e) => {
         let key = e.keyCode;
         let letra = String.fromCharCode(key);
-    
-        if (VerificaLetra(key, letra) && palavraSecreta.includes(letra) && !letrasCorretas.includes(letra)) {
-            for (let i = 0; i < palavraSecreta.length; i++) {
-                if (palavraSecreta[i] === letra) {
-                    EscreveLetraCerta(i);
-                    letrasCorretas.push(letra);
-                    acertos ++;
-                    VerificaAcertos();
-                }   
+        ProcessaEntrada(key, letra);
+    }
+}
+
+function ProcessaEntrada(key, letra) {
+    if (VerificaLetra(key, letra) && palavraSecreta.includes(letra) && !letrasCorretas.includes(letra)) {
+        for (let i = 0; i < palavraSecreta.length; i++) {
+            if (palavraSecreta[i] === letra) {
+                EscreveLetraCerta(i);
+                letrasCorretas.push(letra);
+                acertos++;
+                VerificaAcertos();
             }
         }
-        else if (VerificaLetra(key, letra) && !letrasErradas.includes(letra)) {
-            letrasErradas.push(letra);
-            EscreveLetraErrada(letra);
-            erros --;
-            DesenhaBoneco(erros);
-            VerificaErros();
-        }
+    }
+    else if (VerificaLetra(key, letra) && !letrasErradas.includes(letra)) {
+        letrasErradas.push(letra);
+        EscreveLetraErrada(letra);
+        erros--;
+        DesenhaBoneco(erros);
+        VerificaErros();
     }
 }
 
@@ -89,6 +92,7 @@ function VoltarIndex() {
     jogo.style.display = 'none';
     mobileInput.style.display = 'none';
     palavraInput.style.display = 'none';
+    mobileInput.style.display = 'none';
     btnSalvaComeca.style.display = 'none';
     btnDesistir.style.display = 'none';
     btnVoltar.style.display = 'none';
@@ -139,8 +143,8 @@ let acertos = 0;
 
 let jogo = document.getElementById("jogo");
 let palavraInput = document.getElementById("palavra");
-let botoes = document.getElementById("buttons-container");
 let mobileInput = document.getElementById("mobile-input");
+let botoes = document.getElementById("buttons-container");
 let btnNovoJogo = document.getElementById("novo-jogo");
 let btnChutar = document.getElementById("chutar");
 let input = document.getElementById("input");
@@ -158,6 +162,7 @@ btnDesistir.onclick = VoltarIndex;
 jogo.style.display = 'none';
 mobileInput.style.display = 'none';
 palavraInput.style.display = 'none';
+mobileInput.style.display = 'none';
 btnSalvaComeca.style.display = 'none';
 btnDesistir.style.display = 'none';
 btnVoltar.style.display = 'none';
