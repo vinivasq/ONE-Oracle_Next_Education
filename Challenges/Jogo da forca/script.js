@@ -125,7 +125,6 @@ function botoesColumn() {
 
 function botoesRow() {
     botoes.style.flexDirection = 'row';
-    botoes.style.height= '12vh';
 }
 
 function recarregaPagina() {
