@@ -39,29 +39,34 @@ body {
 
 #mobile-input:focus {
     animation: none;
+    outline: none;
 }
 
 .content-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     flex-grow: 2;
 }
 
-.palavra {
+.textarea {
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin-top: 2em;
+    width: 40vw;
     flex-grow: 1;
     font-size: 2em;
     color: #0A3871;
     background: none;
     border: none;
+    outline: none;
 }
 
 .info {
     display: flex;
-    margin-left: 30%;
+    align-items: flex-start;
+    width: 40vw;
+    margin-bottom: 1em;
     font-size: 14px;
     color: #616161;
 }
@@ -127,16 +132,15 @@ footer a {
     }
 
     .content-container {
-
+        flex-grow: .5;
     }
     
-    .palavra {
+    .textarea, .info {
+        width: 60vw;
     }
 
     .info {
         justify-content: center;
-        margin-left: 0;
-        margin-bottom: 1em;
     }
     
     canvas {
