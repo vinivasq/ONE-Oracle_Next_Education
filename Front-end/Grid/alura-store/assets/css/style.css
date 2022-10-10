@@ -4,20 +4,31 @@
     font-family: Arial, Helvetica, sans-serif;
     grid-template-areas: "cabecalho" "conteudo" "rodape";
     grid-template-columns: auto; /* temos apenas uma grande coluna */
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 50px auto auto;
 }
 
 .cabecalho {
-    background-color: red;
     grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
 }
  
 .conteudo {
-    background-color: green;
     grid-area: conteudo;
+    padding: 0 2rem;
 }
 
 .rodape {
-    background-color: blue;
     grid-area: rodape;
+    background-color: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
+    text-align: center;
+    text-shadow:  #0a38714a 2px 3px 7px;
+
+}
+
+.rodape a {
+    color: inherit;
 }
