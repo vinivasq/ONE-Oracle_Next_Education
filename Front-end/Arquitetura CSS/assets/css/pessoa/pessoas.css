@@ -1,0 +1,10 @@
+.pessoa{
+    display: flex;
+    flex-direction: column;
+}
+
+.pessoas {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
