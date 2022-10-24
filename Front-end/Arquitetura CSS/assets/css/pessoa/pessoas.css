@@ -3,8 +3,14 @@
     flex-direction: column;
 }
 
-.pessoas {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 3rem;
+@media screen and (min-width: 0) {
+    .pessoa{
+        margin-bottom: 2rem;
+    }    
+}
+
+@media screen and (min-width: 768px) {
+    .pessoa {
+        margin-bottom: 0;
+    }
 }

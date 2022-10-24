@@ -2,9 +2,28 @@
     align-items: center;
     background: #F9F9F9;
     display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
 }
 
+@media screen and (min-width: 0) {
+    .cabecalho {
+        padding: 0 1rem;
+        justify-content: center;
+    }
+    
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho{
+        padding: 0 2rem;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: block;
+    }
+}
 
 
