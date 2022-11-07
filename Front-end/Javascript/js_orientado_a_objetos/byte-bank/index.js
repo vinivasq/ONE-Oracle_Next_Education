@@ -9,5 +9,3 @@ const contaCorrenteCliente2 = new ContaCorrente(cliente2, 1010)
 
 contaCorrenteCliente1.despositar(500)
 contaCorrenteCliente1.transferir(200, contaCorrenteCliente2)
-
-console.log(ContaCorrente.numeroDeContas)
