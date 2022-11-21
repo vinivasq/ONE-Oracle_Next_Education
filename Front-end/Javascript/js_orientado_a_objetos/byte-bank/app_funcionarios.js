@@ -15,4 +15,4 @@ const diretorEstaLogado = SistemaAutenticacao.login(diretor, "12345")
 const clienteEstaLogado = SistemaAutenticacao.login(cliente, "12345")
 
 
-console.log(gerenteEstaLogado, diretorEstaLogado)
+console.log(gerenteEstaLogado, diretorEstaLogado, clienteEstaLogado)
