@@ -19,11 +19,11 @@ body {
   padding: 1rem;
   min-width: 400px;
   min-height: 300px;
-  transition: all .5s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 
 .todo-list:hover {
-  scale: 1.009;
+  scale: 1.005;
 }
 
 .title {
