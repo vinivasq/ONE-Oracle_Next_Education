@@ -1,9 +1,14 @@
 {
   "profile": [
     {
-      "nome": "Vinícius da Silva Vasques",
+      "nome": "Vinícius Vasques",
       "email": "vinivasq@hotmail.com",
       "id": 2
+    },
+    {
+      "nome": "Victoria",
+      "email": "viccunhaconsentins@gmail.com",
+      "id": 3
     }
   ]
 }
