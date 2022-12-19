@@ -8,8 +8,10 @@
     --black: #464646;
 
     --font-regular: 400 1em Raleway;
+    --font-regular-bold: 600 0.875em Raleway;
     --font-lg: 400 1.3750em Raleway;
     --font-title: 700 1.3750em Raleway;
+    --font-title-sm: 700 1em Raleway;
     --font-thin: 200 1em Raleway;
 }
 
