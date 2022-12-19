@@ -4,29 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/layout.css">
     <link rel="stylesheet" href="./assets/styles/header.css">
+    <link rel="stylesheet" href="./assets/styles/hero.css">
     <title>Vinícius Vasques</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <img class="header__image" src="./assets/images/IMG_0397.PNG" alt="memoji acenando">
-            <h2 class="header__title">Vinícius Vasques</h2>
+    <header class="header ">
+        <div class="navbar container">
+            <div class="header__presentation">
+                <img class="header__presentation__image" src="./assets/images/memoji.PNG" alt="memoji acenando">
+                <h2 class="header__presentation__title">Vinícius Vasques</h2>
+            </div>
             <nav>
-                <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#aboutMe">Sobre mim</a></li>
-                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#education">Formação</a></li>
+                <ul class="header__menu__list">
+                    <li class="header__menu__list__item"><a href="#aboutMe">Sobre mim</a></li>
+                    <li class="header__menu__list__item"><a href="#skills">Skills</a></li>
+                    <li class="header__menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="header__menu__list__item"><a href="#education">Formação</a></li>
                     <li class="menu__list__item"><a href="#experience">Experiências</a></li>
                     <li class="menu__list__item"><a href="#contact">Contato</a></li>
                 </ul>
-                <li class="menu__email">vinivasq@hotmail.com</li>
+                <li class="header__menu__email">vinivasq@hotmail.com</li>
             </nav>
         </div>
+        <section class="hero">
+            <div class="container">
+                <div>
+                    <img class="hero__image" src="./assets/images/profile_image.jpg" alt="Foto de perfil">
+                </div>
+                <h1 class="hero__title">Olá, meu nome é Vinícius Vasques e construo páginas web</h1>
+                <p class="hero__description">Eu sou graduando em Analise e Desenvolvimento de Sistemas e atualmente estou participando no projeto Oracle Next Education na Alura.</p>
+                <nav class="hero__links">
+                    <li class="hero__link">
+                        <a target="_blank" href="https://github.com/vinivasq">
+                            Github
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_166_1692)">
+                            <path d="M4.69993 12.2426L10.4369 6.50565L10.4369 11.776L11.771 11.7712V4.22876H4.22853L4.22853 5.55812L9.49412 5.56284L3.75712 11.2998L4.69993 12.2426Z" fill="#7e22ce"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_166_1692">
+                            <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="hero__link">
+                        <a target="_blank" href="https://linkedin.com/in/vinivasq">
+                            Linkedin
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_166_1692)">
+                            <path d="M4.69993 12.2426L10.4369 6.50565L10.4369 11.776L11.771 11.7712V4.22876H4.22853L4.22853 5.55812L9.49412 5.56284L3.75712 11.2998L4.69993 12.2426Z" fill="#7e22ce"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_166_1692">
+                            <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="hero__link">
+                        <a target="_blank" href="./assets/curriculo_vinicius_vasques.pdf">
+                            Currículo
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_166_1692)">
+                            <path d="M4.69993 12.2426L10.4369 6.50565L10.4369 11.776L11.771 11.7712V4.22876H4.22853L4.22853 5.55812L9.49412 5.56284L3.75712 11.2998L4.69993 12.2426Z" fill="#7e22ce"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_166_1692">
+                            <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="hero__link">
+                        <a target="_blank" href="https://www.instagram.com/vinivasq/">
+                            Instagram
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_166_1692)">
+                            <path d="M4.69993 12.2426L10.4369 6.50565L10.4369 11.776L11.771 11.7712V4.22876H4.22853L4.22853 5.55812L9.49412 5.56284L3.75712 11.2998L4.69993 12.2426Z" fill="#7e22ce"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_166_1692">
+                            <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </a>
+                    </li>
+                </nav>
+            </div>
+        </section>
     </header>
-
+<!-- remover o 100% de height do body depois -->
+    <main>
+        <section class="aboutMe">
+            <div class="container">
+                <h2 class="aboutMe__title">Sobre mim</h2>
+                <p class="aboutMe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.<br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+                <div class="aboutMe__signature"></div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

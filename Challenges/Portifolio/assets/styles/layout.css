@@ -1,14 +1,14 @@
 :root {
-    --background-main-color: #f1f5f9:
+    --background-main-color: #f1f5f9;
     --background-fade1-color: #64748b;
     --background-fade2-color: #1e293b;
     --main-color: #7e22ce;
-    --black: #171717;
+    --black: #464646;
 
     --font-regular: 400 1em Raleway;
     --font-sm: 400 0.8570em Raleway;
     --font-lg: 400 1.3750em Raleway;
-    --font-bold: 700 1.3750em Raleway;
+    --font-title: 700 1.3750em Raleway;
     --font-thin: 200 1em Raleway;
 }
 
@@ -22,11 +22,25 @@ body {
     margin: 0;
     padding: 0;
     font: var(--font-regular);
+    background-color: var(--background-main-color);
+    /* background-image: linear-gradient(var(--background-main-color), var(--background-fade1-color), var(--background-fade2-color)); */
+    color: var(--black);
+
 }
 
 a,
 button {
     cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+li {
+    list-style: none;
 }
 
 .container {
