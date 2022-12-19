@@ -1,0 +1,19 @@
+.aboutMe__title {
+    font: var(--font-title);
+    line-height: 25.83px;
+    padding: 16px 0px;
+}
+
+.aboutMe__description{
+    margin-bottom: 1em;
+    font-size: 0.875em;
+    line-height: 16.44px;
+}
+
+.aboutMe__signature{
+    background-image: url(../images/signature.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 88px;
+    width: 88px;
+} 

@@ -1,0 +1,24 @@
+.hobbies__title{
+    text-align: center;
+    font: var(--font-title);
+    margin: 32px 0px;
+}
+
+.hobbies__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.hobbies__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background-main-color);
+    box-shadow: 1px 1px 3px #64748b47;
+    border-radius: 6px;
+    width: calc(50% - 1em);
+    height: 25vh;
+    font-weight: 700;
+}
