@@ -33,6 +33,7 @@ body {
 main {
     box-shadow: inset 1px 0px 1px #64748b;
     background-image: linear-gradient(var(--background-fade1-color) 50%, var(--background-fade2-color), var(--background-fade3-color));
+    padding: 1rem 0rem;
 }
 
 a,
@@ -56,4 +57,19 @@ ul {
 
 .container {
     padding: 0px 16px;
+}
+
+footer {
+    background-color: var(--background-fade3-color);
+    color: var(--background-main-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1em;
+    text-shadow:  var(--background-fade2-color) 1px 1px 6px;
+}
+
+footer a {
+    color: var(--main-color);
+    text-shadow: none;
 }

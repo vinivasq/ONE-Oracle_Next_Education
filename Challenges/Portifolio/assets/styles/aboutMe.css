@@ -1,7 +1,7 @@
 .aboutMe__title {
     font: var(--font-title);
     line-height: 25.83px;
-    padding: 16px 0px;
+    padding-bottom: 16px;
 }
 
 .aboutMe__description{
