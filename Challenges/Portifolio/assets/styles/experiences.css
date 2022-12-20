@@ -20,6 +20,7 @@
     gap: 8px;
 }
 
+
 .experiences__item__image {
     border-radius: 6px 6px 0px 0px;
     width: 100%;
@@ -60,3 +61,30 @@
     color: var(--background-main-color);
 }
 
+@media screen and (min-width: 768px){
+    .experiences__item__image {
+        height: auto;
+        width: 50%;
+    }
+    .experiences__item {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .experiences__item__image {
+        border-radius: 6px;
+    }
+
+    .experiences__item__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .experiences__item__title {
+        margin-bottom: 1em;
+    }
+
+
+
+}

@@ -37,3 +37,20 @@
     max-width: 188px;
     height: auto;
 }
+
+@media screen and (min-width: 768px) {
+    .education__list {
+        flex-direction: row;
+    }
+
+    .education__item {
+        width: calc(33.33% - 1.25em);
+    }
+
+    .education__image {
+        display: flex;
+        align-items: center;
+        height: 189.66px;
+        justify-content: center;
+    }
+}

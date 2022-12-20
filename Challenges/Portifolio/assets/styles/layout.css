@@ -31,7 +31,6 @@ body {
 }
 
 main {
-    box-shadow: inset 1px 0px 1px #64748b;
     background-image: linear-gradient(var(--background-fade1-color) 50%, var(--background-fade2-color), var(--background-fade3-color));
     padding: 1rem 0rem;
 }
@@ -56,7 +55,13 @@ ul {
 }
 
 .container {
-    padding: 0px 16px;
+    padding: 0rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0rem 2rem;
+    }
 }
 
 footer {
