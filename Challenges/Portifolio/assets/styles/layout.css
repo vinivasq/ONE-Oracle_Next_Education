@@ -8,6 +8,7 @@
     --black: #464646;
 
     --font-regular: 400 1em Raleway;
+    --font-regular-semibold: 500 1em Raleway;
     --font-regular-bold: 600 0.875em Raleway;
     --font-lg: 400 1.3750em Raleway;
     --font-title: 700 1.3750em Raleway;
@@ -31,7 +32,7 @@ body {
 }
 
 main {
-    background-image: linear-gradient(var(--background-fade1-color) 50%, var(--background-fade2-color), var(--background-fade3-color));
+    background-image: linear-gradient(var(--background-fade1-color) 33.33%, var(--background-fade2-color), var(--background-fade3-color));
     padding: 1rem 0rem;
 }
 
@@ -58,12 +59,6 @@ ul {
     padding: 0rem 1rem;
 }
 
-@media screen and (min-width: 768px) {
-    .container {
-        padding: 0rem 2rem;
-    }
-}
-
 footer {
     background-color: var(--background-fade3-color);
     color: var(--background-main-color);
@@ -77,4 +72,16 @@ footer {
 footer a {
     color: var(--main-color);
     text-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0rem 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container {
+        padding: 0rem 9.5rem;
+    }
 }
