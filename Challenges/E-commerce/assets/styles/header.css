@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.navbar__logo__svg{
+    background-image: url(../images/logo.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 28px;
+}
+
+
+.navbar .button-secondary {
+    padding: .5rem 2rem;
+}
+
+.navbar__searchbar{
+    display: flex;
+    align-items: center;
+}

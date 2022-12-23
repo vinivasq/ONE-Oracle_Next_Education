@@ -1,0 +1,25 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+    width: 100vw;
+    height: 50vh;
+    background-image: url(../images/banner-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+.banner__title {
+    font: var(--font-title);
+    text-shadow: 5px 5px 10px var(--black);
+    margin-bottom: .5rem;
+}
+
+.banner__description {
+    font: var(--font-semibold-sm);
+    text-shadow: 5px 5px 10px var(--black);
+    margin-bottom: .5rem;
+}
