@@ -1,7 +1,7 @@
 public class TesteReferencias {
 
     public static void main(String[] args) {
-        Gerente g1 = new Gerente("Marcos", "541304987725", 5000.0, "1608");
+        Gerente g1 = new Gerente("Marcos", "541304987725", 5000.0);
 
         EditorVideo ev = new EditorVideo("Lucas", "65849215730", 2500.0);
 

@@ -7,10 +7,9 @@ public class TestaFuncionario {
         // System.out.println(vinicius.getSalario());
         // Não pode ser compilado pois agora "funcionario" é uma classe abstrata
 
-        Gerente matheus = new Gerente("Matheus", "3418521911", 8400.50, "chefe");
+        Gerente matheus = new Gerente("Matheus", "3418521911", 8400.50);
 
-        System.out.println(matheus.getSenha());
-        System.out.println(matheus.autenticaSenha("chefe"));
+        System.out.println(matheus.autentica(2222));
         System.out.println(matheus.getNome());
         System.out.println(matheus.getBonificacao());
 

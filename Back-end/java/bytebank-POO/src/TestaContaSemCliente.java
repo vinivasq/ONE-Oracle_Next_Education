@@ -3,10 +3,9 @@ public class TestaContaSemCliente {
 		Conta contaDaMarcela = new ContaPoupanca(6646,969060);
 		System.out.println(contaDaMarcela.getSaldo());
 
-		contaDaMarcela.setTitular(new Cliente());
+		contaDaMarcela.setTitular(new Cliente("Marcela", "951248324525", "streamer"));
 		System.out.println(contaDaMarcela.getTitular());
 
-		contaDaMarcela.getTitular().setNome("Marcela");
 		System.out.println(contaDaMarcela.getTitular().getNome());
 
 	}
