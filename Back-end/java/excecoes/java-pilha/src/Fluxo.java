@@ -2,7 +2,12 @@ public class Fluxo {
 
     public static void main(String[] args) {
         System.out.println("Ini do main");
-        metodo1();
+        try {
+            metodo1();
+        } catch (ArithmeticException | NullPointerException  | CustomException e) {
+            System.out.println("Mensagem: " + e.getMessage());
+            e.printStackTrace();
+        }
         System.out.println("Fim do main");
     }
 
@@ -17,6 +22,7 @@ public class Fluxo {
         for(int i = 1; i <= 5; i++) {
             System.out.println(i);
         }
-        System.out.println("Fim do metodo2");        
+        throw new CustomException("Mensagem de erro.");
+        // System.out.println("Fim do metodo2");        
     }
 }
