@@ -1,3 +1,4 @@
+package br.com.bytebank.modelo.interfaces;
 public interface Autenticavel {
     public abstract void setSenha(int senha);
     public abstract boolean autentica(int senha);

@@ -1,3 +1,8 @@
+package br.com.bytebank.teste;
+
+import br.com.bytebank.modelo.conta.Conta;
+import br.com.bytebank.modelo.conta.ContaCorrente;
+
 public class CriaConta {
 
     public static void main(String[] args) {

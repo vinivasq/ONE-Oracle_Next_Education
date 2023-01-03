@@ -1,3 +1,8 @@
+package br.com.bytebank.modelo.funcionario;
+
+import br.com.bytebank.modelo.interfaces.Autenticavel;
+import br.com.bytebank.modelo.sistema.Autenticador;
+
 public class Gerente extends Funcionario implements Autenticavel{
     private Autenticador autenticador;
     

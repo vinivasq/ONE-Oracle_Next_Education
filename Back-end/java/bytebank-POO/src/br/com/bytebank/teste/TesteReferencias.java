@@ -1,3 +1,10 @@
+package br.com.bytebank.teste;
+
+import br.com.bytebank.modelo.funcionario.Designer;
+import br.com.bytebank.modelo.funcionario.EditorVideo;
+import br.com.bytebank.modelo.funcionario.Gerente;
+import br.com.bytebank.modelo.sistema.ControleBonificacao;
+
 public class TesteReferencias {
 
     public static void main(String[] args) {

@@ -1,3 +1,7 @@
+package br.com.bytebank.modelo.conta;
+
+import br.com.bytebank.modelo.sistema.SacaException;
+
 public abstract class Conta {
 
 	private double saldo;

@@ -1,3 +1,7 @@
+package br.com.bytebank.modelo.sistema;
+
+import br.com.bytebank.modelo.funcionario.Funcionario;
+
 public class ControleBonificacao {
 
     private double soma;

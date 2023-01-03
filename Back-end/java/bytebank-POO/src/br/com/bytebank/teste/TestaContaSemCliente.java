@@ -1,3 +1,9 @@
+package br.com.bytebank.teste;
+
+import br.com.bytebank.modelo.conta.Cliente;
+import br.com.bytebank.modelo.conta.Conta;
+import br.com.bytebank.modelo.conta.ContaPoupanca;
+
 public class TestaContaSemCliente {
 	public static void main(String[] args) {
 		Conta contaDaMarcela = new ContaPoupanca(6646,969060);

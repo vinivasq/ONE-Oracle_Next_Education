@@ -1,3 +1,9 @@
+package br.com.bytebank.teste;
+
+import br.com.bytebank.modelo.conta.Conta;
+import br.com.bytebank.modelo.conta.ContaCorrente;
+import br.com.bytebank.modelo.conta.ContaPoupanca;
+
 public class TestaMetodo {
 	public static void main(String[] args) {
 		Conta contaDoPaulo = new ContaCorrente(6646,969060);

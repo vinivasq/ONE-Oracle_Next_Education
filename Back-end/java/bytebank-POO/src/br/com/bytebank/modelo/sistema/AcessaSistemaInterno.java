@@ -1,3 +1,8 @@
+package br.com.bytebank.modelo.sistema;
+
+import br.com.bytebank.modelo.conta.Cliente;
+import br.com.bytebank.modelo.funcionario.Gerente;
+
 public class AcessaSistemaInterno {
     public static void main(String[] args) {
         Gerente vinicius = new Gerente("Vinicius Vasques", "65449832152", 9000.0);

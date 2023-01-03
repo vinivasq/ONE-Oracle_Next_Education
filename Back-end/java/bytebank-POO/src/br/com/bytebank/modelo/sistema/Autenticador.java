@@ -1,3 +1,4 @@
+package br.com.bytebank.modelo.sistema;
 public class Autenticador {
     private int senha;
 

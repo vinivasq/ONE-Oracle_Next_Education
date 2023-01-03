@@ -1,3 +1,8 @@
+package br.com.bytebank.teste;
+
+import br.com.bytebank.modelo.funcionario.Funcionario;
+import br.com.bytebank.modelo.funcionario.Gerente;
+
 public class TestaFuncionario {
     public static void main(String[] args) {
         // Funcionario vinicius = new Funcionario("Vinicius Vasques", "05097571037", 2100.00);
@@ -13,6 +18,6 @@ public class TestaFuncionario {
         System.out.println(matheus.getNome());
         System.out.println(matheus.getBonificacao());
 
-        System.out.println(Funcionario.totalFuncionarios);
+        System.out.println(Funcionario.getTotalFuncionarios());
     }
 }

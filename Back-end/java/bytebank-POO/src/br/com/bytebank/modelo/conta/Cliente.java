@@ -1,3 +1,8 @@
+package br.com.bytebank.modelo.conta;
+
+import br.com.bytebank.modelo.sistema.Autenticador;
+import br.com.bytebank.modelo.interfaces.Autenticavel;
+
 public class Cliente implements Autenticavel {
 
     private String nome;
