@@ -73,4 +73,7 @@ public abstract class Conta {
 		return Conta.total;
 	}
 
+	public String toString() {
+		return "Numero: " + this.numero + ", Agencia: " + this.agencia;
+	}
 }

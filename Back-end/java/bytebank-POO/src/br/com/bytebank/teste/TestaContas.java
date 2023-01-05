@@ -12,7 +12,9 @@ public class TestaContas {
         contaPoupanca.deposita(5000);
         contaCorrente.transfere(500, contaPoupanca);
 
+        System.out.println(contaCorrente);   
         System.out.println(contaCorrente.getSaldo());   
+        System.out.println(contaPoupanca);
         System.out.println(contaPoupanca.getSaldo());
     
     }
