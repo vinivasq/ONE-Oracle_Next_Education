@@ -14,18 +14,20 @@ public class TestaCurso {
         javaColecoes.adiciona(new Aula("Modelando com colecoes", 24));
         javaColecoes.adiciona(new Aula("Trabalhando com ArrayList", 21));
 
-
-        // System.out.println(javaColecoes.getAulas());
-
         List<Aula> aulasImutaveis = javaColecoes.getAulas();
         List<Aula> aulas = new ArrayList<>(aulasImutaveis);
-
         aulas.sort(Comparator.comparing(Aula::getTempo));
-
+        // System.out.println(javaColecoes);
         // System.out.println(aulas);
 
-        System.out.println(javaColecoes);
+        Aluno a1 = new Aluno("Rodrigo Turini", 34672);
+        Aluno a2 = new Aluno("Guilherme Silveira", 5617);
+        Aluno a3 = new Aluno("Mauricio Aniche", 17645);
 
+        javaColecoes.matricula(a1);
+        javaColecoes.matricula(a2);
+        javaColecoes.matricula(a3);
 
+        javaColecoes.getAlunos().forEach(aluno -> System.out.println(aluno));
     }
 }
