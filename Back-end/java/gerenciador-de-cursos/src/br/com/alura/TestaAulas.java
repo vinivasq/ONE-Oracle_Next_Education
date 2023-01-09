@@ -25,6 +25,7 @@ public class TestaAulas {
         
         // aulas.sort((aula1, aula2) -> Integer.compare(aula1.getTempo(), aula2.getTempo()));
         aulas.sort(Comparator.comparing(Aula::getTempo));
+        // Collections.sort(aulas, Comparator.comparing(Aula::getTempo));
         
         System.out.println(aulas);
     }
