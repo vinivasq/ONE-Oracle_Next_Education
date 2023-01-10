@@ -6,8 +6,7 @@ import java.util.List;
 
 public class TestaCurso {
     public static void main(String[] args) {
-        Curso javaColecoes = new Curso("Dominando as colecoes do Java",
-                    "Paulo Silveira");
+        Curso javaColecoes = new Curso("Dominando as colecoes do Java", "Paulo Silveira");
 
         javaColecoes.adiciona(new Aula("Trabalhando com ArrayList", 21));
         javaColecoes.adiciona(new Aula("Criando uma Aula", 20));
@@ -30,10 +29,15 @@ public class TestaCurso {
         
         javaColecoes.getAlunos().forEach(aluno -> System.out.println(aluno));
         
-        Aluno turini = new Aluno("Rodrigo Turini", 34672);
+        // Aluno turini = new Aluno("Rodrigo Turini", 34672);
 
-        System.out.println(a1.equals(turini));
-        System.out.println(javaColecoes.getAlunos().contains(turini));
+
+        System.out.println("Existe o aluno com a matricula: 5617?");
+        Aluno pesquisaAluno = javaColecoes.buscaMatriculaAluno(5617);
+        System.out.println(pesquisaAluno);
+        
+        // System.out.println(a1.equals(turini));
+        // System.out.println(javaColecoes.getAlunos().contains(turini));
 
     }
 }
