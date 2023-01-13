@@ -15,10 +15,10 @@ public class TestaListagem {
 
         while(result.next()){
             Integer id = result.getInt("id");
-            System.out.println(id);
             String nome = result.getString("nome");
-            System.out.println(nome);
             String descricao = result.getString("descricao");
+            System.out.println(id);
+            System.out.println(nome);
             System.out.println(descricao);
         }
 
