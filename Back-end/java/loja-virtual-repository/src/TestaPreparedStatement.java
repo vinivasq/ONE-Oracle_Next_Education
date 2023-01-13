@@ -25,5 +25,7 @@ public class TestaPreparedStatement {
             Integer id = result.getInt(1);
             System.out.println("O produto inserido foi: " + id);
         }
+
+        con.close();
     }
 }
