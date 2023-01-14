@@ -10,6 +10,7 @@ public class TestaConexao {
         ConnectionFactory connectionFactory = new ConnectionFactory();
         Connection con = connectionFactory.recuperarConexao();
         
+        System.out.println("Fechando conexão");
         con.close();
     }
 }
