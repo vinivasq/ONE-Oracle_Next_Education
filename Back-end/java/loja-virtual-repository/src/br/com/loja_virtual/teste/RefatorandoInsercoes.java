@@ -18,8 +18,8 @@ public class RefatorandoInsercoes {
 
             try(PreparedStatement stm = con.prepareStatement("INSERT INTO PRODUTO (nome, descricao) VALUES (?, ?)", Statement.RETURN_GENERATED_KEYS)) {
 
-                adicionarItem("Smart TV", "Televisão Samsung", stm);
-                adicionarItem("Iphone", "Iphone 12 mini", stm);
+                adicionarItem("Smart TV", "Televisão Samsung", stm); //pré DAO
+                adicionarItem("Iphone", "Iphone 12 mini", stm); //pré DAO
 
                 con.commit();
 
@@ -31,7 +31,7 @@ public class RefatorandoInsercoes {
         }
     }
 
-    private static void adicionarItem(String nome, String descricao, PreparedStatement stm) throws SQLException {
+    private static void adicionarItem(String nome, String descricao, PreparedStatement stm) throws SQLException { //pré DAO
         stm.setString(1, nome);
         stm.setString(2, descricao);
 
