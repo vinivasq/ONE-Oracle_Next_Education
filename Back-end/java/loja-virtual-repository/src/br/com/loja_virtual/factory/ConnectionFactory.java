@@ -1,3 +1,6 @@
+package br.com.loja_virtual.factory;
+
+
 import java.sql.Connection;
 // import java.sql.DriverManager;
 import java.sql.SQLException;
