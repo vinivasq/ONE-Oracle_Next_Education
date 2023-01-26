@@ -63,7 +63,9 @@ public class ProdutoDAO {
 
             try(ResultSet rSet = pstm.getResultSet()){
                 while(rSet.next()){
-                    Produto produto = new Produto(rSet.getInt(1), rSet.getString(2), rSet.getString(3));
+                    Produto produto = new Produto(
+                        rSet.getInt(1), rSet.getString(2), rSet.getString(3)
+                        );
                     
                     produtos.add(produto);
                 }
