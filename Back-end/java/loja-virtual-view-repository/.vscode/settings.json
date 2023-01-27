@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Vinicius\\repos\\ONE-Oracle_Next_Education\\Back-end\\java\\c3p0-0.9.5.4.jar",
+        "c:\\Vinicius\\repos\\ONE-Oracle_Next_Education\\Back-end\\java\\mchange-commons-java-0.2.16.jar",
+        "c:\\Vinicius\\repos\\ONE-Oracle_Next_Education\\Back-end\\java\\mysql-connector-java-8.0.17.jar"
+    ]
+}
