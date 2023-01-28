@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/70ad3fdfa7.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="https://kit.fontawesome.com/70ad3fdfa7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/styles/layout.css">
     <link rel="stylesheet" href="./assets/styles/header.css">
     <link rel="stylesheet" href="./assets/styles/banner.css">
     <link rel="stylesheet" href="./assets/styles/categories.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
     <title>AluraGeek Store</title>
 </head>
 <body>
@@ -174,7 +176,27 @@
             </section>
         </section>
     </main>
-    
-
+    <footer>
+        <div class="footer__info container">
+            <div class="footer__logo"></div>
+            <a href="" class="footer__info-link">Quem somos nós</a>
+            <a href="" class="footer__info-link">Política de privacidade</a>
+            <a href="" class="footer__info-link">Programa fidelidade</a>
+            <a href="" class="footer__info-link">Nossas lojas</a>
+            <a href="" class="footer__info-link">Quero ser franqueado</a>
+            <a href="" class="footer__info-link">Anuncie aqui</a>
+            <form action="submit" class="footer__form">
+                <h2 class="footer__form-title">Fale conosco</h2>
+                <label for="name" class="footer__form-label">Nome</label>
+                <input type="text" name="name" placeholder="Fulano da Silva" required class="footer__form-input">
+                <label for="text" class="footer__form-label">Digite sua mensagem</label>
+                <textarea name="text" class="footer__form-textarea" placeholder="Digite sua mensagem" required ></textarea>
+                <button class="button button-primary">Enviar mensagem</button>
+            </form>
+        </div>
+        <div class="copyright">
+            <p>Desenvolvido por Vinícius Vasques. <a href="https://www.linkedin.com/in/vinivasq/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/vinivasq" target="_blank"><i class="fa-brands fa-github"></i></a></p> 
+        </div>
+    </footer>
 </body>
 </html>
