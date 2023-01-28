@@ -1,3 +1,7 @@
+.categorie{
+    padding-bottom: 1rem;
+}
+
 .categorie__menu{
     display: flex;
     flex-direction: row;
