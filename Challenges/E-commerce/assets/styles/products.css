@@ -1,0 +1,38 @@
+.products {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.products__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.list__item{
+    width: calc(52% - 1rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item__image{
+    width: 100%;
+}
+
+.item__title{
+    font: var(--font-regular-sm);
+}
+
+.item__price{
+    font: var(--font-bold);
+}
+
+.item__link{
+    font: var(--font-bold-sm);
+    color: var(--main-color);
+}

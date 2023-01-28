@@ -16,7 +16,7 @@
     padding: 1rem;
 }
 
-.footer__info-link{
+.info__link{
     font: var(--font-regular);
 }
 
@@ -28,15 +28,15 @@
     gap: .5rem;
 }
 
-.footer__form-title{
+.form__title{
     font: var(--font-bold);
 }
 
-.footer__form-label{
+.form__label{
     font: var(--font-semibold-sm);
 }
 
-.footer__form-input{
+.form__input{
     margin-bottom: 1rem;
     width: 100%;
     padding: 1rem .5rem;
@@ -45,7 +45,7 @@
     border-radius: 5px;
 }
 
-.footer__form-textarea{
+.form__textarea{
     width: 100%;
     padding: 1rem .5rem;
     font: var(--font-light-sm);
