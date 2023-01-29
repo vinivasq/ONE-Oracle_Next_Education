@@ -28,7 +28,39 @@
     padding: .5rem 2rem;
 }
 
+
 .navbar__searchbar{
     display: flex;
     align-items: center;
+}
+
+.searchbar__input{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar .button-secondary{
+        order: 1;
+        width: 10.375rem;
+    }
+
+    .navbar__searchbar{
+        display: flex;
+        gap: 8px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        background-color: var(--black-200);
+        width: 15rem;
+        padding: .5rem 1rem ;
+
+    }
+
+    .searchbar__input{
+        display: flex;
+        background-color: transparent;
+        width: 100%;
+        font: var(--font-light-sm);
+    }
+
 }

@@ -15,15 +15,13 @@
     font: var(--font-light-sm);
     color: var(--black-500);
     width: 100%;
-    padding-left: .5rem;
-    border-radius: 5px 5px 0px 0px;
+    padding: 0.5rem 0.75rem;
 }
 
 .form__input{
     width: 100%;
-    padding: .5rem;
+    padding: 0.5rem 0.75rem;
     font: var(--font-light);
-    border-radius: 0px 0px 5px 5px;
 }
 
 .form__input:focus{
@@ -32,9 +30,8 @@
 
 .form__textarea{
     width: 100%;
-    padding:.5rem;
+    padding: 0.5rem 0.75rem;
     font: var(--font-light);
-    border-radius: 0px 0px 5px 5px;
 }
 
 .form__textarea:focus{
