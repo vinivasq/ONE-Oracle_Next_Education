@@ -48,9 +48,3 @@
     font: var(--font-bold-sm);
     color: var(--main-color);
 }
-
-@media screen and (min-width: 768px) {
-    .list__item{
-        width: calc(25.3% - 1rem);
-    }
-}
