@@ -1,0 +1,30 @@
+.form__title{
+    font: var(--font-bold);
+}
+
+.form__label{
+    font: var(--font-semibold-sm);
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-left: .5rem;
+    padding-top: .5rem;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.form__input{
+    width: 100%;
+    padding: 1rem .5rem;
+    font: var(--font-light-sm);
+    box-shadow: 1px 0px 5px #00000027;
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 1rem;
+}
+
+.form__textarea{
+    width: 100%;
+    padding: 1rem .5rem;
+    margin-bottom: .5rem;
+    font: var(--font-light-sm);
+    box-shadow: 1px 0px 5px #00000027;
+    border-radius: 0px 0px 5px 5px;
+}

@@ -2,10 +2,10 @@
 
 :root {
     --white: #fafafa;
+    --white-100: #f4f4f5;
     --black: #171717;
     --main-color: #16a34a;
     --green-200: #bbf7d0;
-    --green-100: #dcfce7;
 
     --font-light-sm: 400 1rem Raleway;
     --font-regular: 500 1rem Raleway;

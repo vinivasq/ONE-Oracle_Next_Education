@@ -20,37 +20,16 @@
     font: var(--font-regular);
 }
 
+.footer__form-title{
+    font: var(--font-bold);
+    align-self: flex-start;
+}
+
 .footer__form{
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    gap: .5rem;
-}
-
-.form__title{
-    font: var(--font-bold);
-}
-
-.form__label{
-    font: var(--font-semibold-sm);
-}
-
-.form__input{
-    margin-bottom: 1rem;
-    width: 100%;
-    padding: 1rem .5rem;
-    font: var(--font-light-sm);
-    box-shadow: 1px 0px 5px #00000027;
-    border-radius: 5px;
-}
-
-.form__textarea{
-    width: 100%;
-    padding: 1rem .5rem;
-    font: var(--font-light-sm);
-    box-shadow: 1px 0px 5px #00000027;
-    border-radius: 5px;
 }
 
 .copyright{
