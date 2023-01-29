@@ -151,13 +151,19 @@
                 <a href="" class="info__link">Nossas lojas</a>
                 <a href="" class="info__link">Quero ser franqueado</a>
                 <a href="" class="info__link">Anuncie aqui</a>
-                <form action="submit" class="footer__form">
-                    <h2 class="form__title">Fale conosco</h2>
-                    <label for="name" class="form__label">Nome</label>
-                    <input type="text" name="name" placeholder="Fulano da Silva" required class="form__input">
-                    <label for="text" class="form__label">Digite sua mensagem</label>
-                    <textarea name="text" class="form__textarea" placeholder="Digite sua mensagem" required ></textarea>
-                    <button class="button button-primary">Enviar mensagem</button>
+                <h2 class="footer__form-title">Fale conosco</h2>
+                <form action="submit" class="form__container">
+                    <div class="field__conteiner">
+                        <label for="name" class="form__label">Nome</label>
+                        <input type="text" name="name" placeholder="Fulano da Silva" required class="form__input">
+                    </div>
+                    <div class="field__conteiner">
+                        <label for="text" class="form__label">Digite sua mensagem</label>
+                        <textarea name="text" class="form__textarea" placeholder="Sua mensagem aqui" required ></textarea>
+                    </div>
+                    <div>
+                        <button class="button button-primary">Enviar mensagem</button>
+                    </div>
                 </form>
             </div>
             <div class="copyright">

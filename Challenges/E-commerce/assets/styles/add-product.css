@@ -8,14 +8,3 @@
     font: var(--font-title);
     margin-bottom: 1rem;
 }
-
-.form__label-product{
-    padding-left: .5rem;
-    padding-top: .5rem;
-    border-radius: 5px 5px 0px 0px;
-}
-
-.add-product__form{
-    display: flex;
-    flex-direction: column;
-}
