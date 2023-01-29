@@ -80,3 +80,9 @@ ul {
         padding: 0rem 2rem;
     }   
 }
+
+@media screen and (min-width: 992px) {
+    .container{
+        padding: 0rem 9.5rem;
+    }
+}

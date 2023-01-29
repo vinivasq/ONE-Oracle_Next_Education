@@ -57,8 +57,4 @@
     .form__container-login{
         width: 50%;
     }
-    
-    .list__item{
-        width: calc(25.3% - 1rem);
-    }
 }
