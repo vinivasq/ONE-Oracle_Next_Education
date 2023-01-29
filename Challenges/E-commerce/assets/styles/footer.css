@@ -26,11 +26,6 @@
     font: var(--font-regular);
 }
 
-.footer__form-title{
-    font: var(--font-bold);
-    align-self: flex-start;
-}
-
 .copyright{
     display: flex;
     justify-content: center;
@@ -53,7 +48,7 @@
         align-items: flex-start;
     }
 
-    .form__container{
+    .form__container-footer{
         width: 60%;
     }
 }

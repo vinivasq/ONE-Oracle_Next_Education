@@ -3,12 +3,27 @@
     flex-direction: column;
     width: 100%;
     gap: 1rem;
+    align-items: center;
+}
+
+.form__container-footer{
+    align-items: flex-start;
 }
 
 .field__container{
     box-shadow: 1px 0px 5px #00000027;
     background-color: #FFFFFF;
     border-radius: 5px;
+    width: 100%;
+}
+
+.form__title{
+    font: var(--font-title);
+}
+
+.form__title-footer{
+    font: var(--font-bold);
+    align-self: flex-start;
 }
 
 .form__label{

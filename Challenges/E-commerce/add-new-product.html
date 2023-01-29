@@ -19,7 +19,10 @@
         <div class="container">
             <nav class="navbar">
                 <div class="navbar__logo__svg"></div>
+                <button class="button button-secondary">Menu administrador</button>
+                
                 <div class="navbar__searchbar">
+                    <input type="text" class="searchbar__input" placeholder="O que você deseja encontrar?"> 
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </nav>
@@ -27,8 +30,8 @@
     </header>
 
     <main class="add-product container">
-        <h1 class="add-product__title">Adicionar novo produto</h1>
         <form action="submit" class="form__container">
+            <h1 class="form__title">Adicionar novo produto</h1>
             <div class="field__container">
                 <label class="form__label" for="URL">URL da imagem</label>
                 <input class="form__input" required type="text">
@@ -49,7 +52,7 @@
                 <label for="description" class="form__label">Descrição do produto</label>
                 <textarea name="description" class="form__textarea"></textarea>
             </div>
-            <button class="button button-primary">Adicionar produto</button>
+            <button class="button button-primary button-primary-add-product">Adicionar produto</button>
         </form>    
     </main>
 
@@ -64,8 +67,8 @@
                 <a href="" class="info__link">Quero ser franqueado</a>
                 <a href="" class="info__link">Anuncie aqui</a>
             </div>
-            <form action="submit" class="form__container">
-                <h2 class="footer__form-title">Fale conosco</h2>
+            <form action="submit" class="form__container form__container-footer">
+                <h2 class="form__title-footer">Fale conosco</h2>
                 <div class="field__container">
                     <label for="name" class="form__label">Nome</label>
                     <input type="text" name="name" placeholder="Fulano da Silva" required class="form__input">

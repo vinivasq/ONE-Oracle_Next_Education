@@ -41,7 +41,7 @@
 @media screen and (min-width: 768px) {
     .navbar .button-secondary{
         order: 1;
-        width: 10.375rem;
+        min-width: 10.375rem;
     }
 
     .navbar__searchbar{
