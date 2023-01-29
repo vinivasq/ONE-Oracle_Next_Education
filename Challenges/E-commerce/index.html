@@ -19,8 +19,10 @@
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <div class="navbar__logo__svg"></div>
-                <button class="button button-secondary">Login</button>
+                <a href="./index.html">
+                    <div class="navbar__logo__svg"></div>
+                </a>
+                <button class="button button-secondary" data-button-login>Login</button>
                 
                 <div class="navbar__searchbar">
                     <input type="text" class="searchbar__input" placeholder="O que você deseja encontrar?"> 
@@ -34,7 +36,7 @@
         <section class="banner container">
                 <h1 class="banner__title">Dezembro Promocional</h1>
                 <p class="banner__description">Produtos selecionados com 33% de desconto</p>
-                <div><button class="button button-primary">Ver consoles</button></div>
+                <div><button class="button button-primary" data-button-console>Ver consoles</button></div>
         </section>
         <section class="categories container">
             <section class="categorie">
@@ -83,7 +85,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="categorie">
+            <section id="console" class="categorie">
                 <div class="categorie__menu">
                     <h2 class="menu__title">Consoles</h3>
                     <a href="./products.html" class="menu__link">Ver tudo <i class="fa-solid fa-arrow-right"></i></a>
@@ -189,7 +191,7 @@
                 <a href="" class="info__link">Quero ser franqueado</a>
                 <a href="" class="info__link">Anuncie aqui</a>
             </div>
-            <form action="submit" class="form__container form__container-footer">
+            <form class="form__container form__container-footer">
                 <h2 class="form__title-footer">Fale conosco</h2>
                 <div class="field__container">
                     <label for="name" class="form__label">Nome</label>
@@ -208,5 +210,7 @@
             <p>Desenvolvido por Vinícius Vasques. <a href="https://www.linkedin.com/in/vinivasq/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/vinivasq" target="_blank"><i class="fa-brands fa-github"></i></a></p> 
         </section>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

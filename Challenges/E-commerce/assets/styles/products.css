@@ -18,8 +18,9 @@
 
 .products__menu{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 .menu__title{
@@ -53,6 +54,12 @@
 @media screen and (min-width: 768px) {
     .list__item{
         width: calc(25.3% - 1rem);
+    }
+
+    .products__menu{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
