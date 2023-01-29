@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/layout.css">
     <link rel="stylesheet" href="./assets/styles/header.css">
-    <link rel="stylesheet" href="./assets/styles/add-product.css">
+    <link rel="stylesheet" href="./assets/styles/login.css">
     <link rel="stylesheet" href="./assets/styles/form.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
-
-    <title>AluraGeek - Adicionar Produto</title>
+    <title>AluraGeek - Login</title>
 </head>
 <body>
     <header class="header">
@@ -26,31 +25,21 @@
         </div>
     </header>
 
-    <main class="add-product container">
-        <h1 class="add-product__title">Adicionar novo produto</h1>
-        <form action="submit" class="form__container">
-            <div class="field__container">
-                <label class="form__label" for="URL">URL da imagem</label>
-                <input class="form__input" required type="text">
-            </div>
-            <div class="field__container">
-                <label class="form__label" for="category">Categoria</label>
-                <input class="form__input" required type="text">
-            </div>
-            <div class="field__container">
-                <label class="form__label" for="name">Nome do produto</label>
-                <input class="form__input" required type="text">
-            </div>
-            <div class="field__container">
-                <label class="form__label" for="price">Preço do produto</label>
-                <input class="form__input" required type="text">
-            </div>
-            <div class="field__container">
-                <label for="description" class="form__label">Descrição do produto</label>
-                <textarea name="description" class="form__textarea"></textarea>
-            </div>
-            <button class="button button-primary">Adicionar produto</button>
-        </form>    
+    <main>
+        <section class="login container">
+            <h1 class="login__title">Iniciar Sessão</h1>
+            <form action="submit" class="form__container">
+                <div class="field__container">
+                    <label for="username" class="form__label">E-mail</label>
+                    <input type="text" class="form__input" required placeholder="Digite seu e-mail">
+                </div>
+                <div class="field__container">
+                    <label for="password" class="form__label">Senha</label>
+                    <input type="password" class="form__input" required placeholder="Digite sua senha" >
+                </div>
+                <button class="button button-primary button-primary-login">Entrar</button>
+            </form>
+        </section>
     </main>
 
     <footer>
