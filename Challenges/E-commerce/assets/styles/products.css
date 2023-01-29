@@ -6,12 +6,23 @@
     gap: 1rem;
 }
 
+
 .products__list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.products__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__title{
+    font: var(--font-title);
 }
 
 .list__item{
